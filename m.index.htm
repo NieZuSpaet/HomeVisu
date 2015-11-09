@@ -1,0 +1,1042 @@
+<!doctype html>
+<html>
+<head>
+	<title>Unser Haus</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	
+<!-- jQuery Mobile CSS bits -->
+	<link rel="stylesheet" href="css/jqm-1.4.0_custom_theme.css" /> 
+	<link rel="stylesheet" href="css/jquery.mobile.icons.min.css" /> 
+	<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" /> 
+	<link rel="stylesheet" href="css/m_custom-1.4.0.css" /> 
+
+	<link rel="stylesheet" href="amcharts/style.css" type="text/css">
+
+<!-- Javascript includes -->
+	<script src="tame.js" type="text/javascript"></script>
+	<script src="js/jquery.js"></script> 
+	<script> 	
+		$(document).bind("mobileinit", function()
+		{
+      		$.mobile.hashListeningEnabled = false;
+  		});
+	</script>	
+	
+	<script src="js/jquery.mobile-1.4.5.min.js"></script> 
+
+
+ 	<script src="js/m_index.js" type="text/javascript"></script>
+ 	<script src="highstock/highstock.js"></script>
+	<script src="highstock/gray.js"></script>
+		
+	<script src="amcharts/amcharts.js"		type="text/javascript"></script> 
+	<script src="amcharts/serial.js" 		type="text/javascript"></script>
+	<script src="amcharts/amstock.js" 		type="text/javascript"></script>
+	<script src="amcharts/gauge.js" 		type="text/javascript"></script>
+	<script src="amcharts/themes/custom.js" type="text/javascript"></script>
+
+</head> 
+<body onload="init()">
+
+ 
+  	
+        
+
+<!-- ****************************************************************************** -->	
+<!--																				-->
+<!--							page "Startseite"									-->
+<!--																				-->
+<!-- ****************************************************************************** -->	
+<div data-role="page" id="startseite" data-theme="d" >
+	<div data-role="header">
+		<p class="my_mobile_header">Unser kleines Haus</p>
+	</div>
+	<div data-role="content">
+       	<ul data-role="listview"  class="my_mobile_list">
+		    <li><a href="#eg" 			style="padding:20px; text-align:center;">EG</a></li>
+		    <li><a href="#og" 			style="padding:20px; text-align:center;">OG</a></li>
+		    <li><a href="#wetter" 		style="padding:20px; text-align:center;">Wetter</a></li>
+			<li><a href="#wetter3" 		style="padding:20px; text-align:center;">Windrose</a></li>
+		    <li><a href="#wetterchart" 	style="padding:20px; text-align:center;">Wetterchart</a></li>
+		    <li><a href="#video" 		style="padding:20px; text-align:center;">Video</a></li>
+		    <li><a href="#timer" 		style="padding:20px; text-align:center;">Timer</a></li>
+		    <li><a href="#technik" 		style="padding:20px; text-align:center;">Technik</a></li>
+		    <li><a href="#lueftung" 	style="padding:20px; text-align:center;">Lüftung</a></li>
+		    <li><a href="#raumtemp" 	style="padding:20px; text-align:center;">Raumtemp.</a></li>
+		</ul>
+  	</div>	
+	<div data-role="footer" data-position="fixed">
+
+	</div><!-- /footer -->
+</div> <!-- page: Startseite -->
+
+<!-- ****************************************************************************** -->	
+<!--																				-->
+<!--							page "EG"									-->
+<!--																				-->
+<!-- ****************************************************************************** -->	
+<div data-role="page" id="eg" data-theme="d" >
+	<div data-role="header">
+		<a href="#" data-rel="back" data-icon="arrow-l" data-transition="slide" data-direction="reverse" class="my_back_btn" ></a>
+		<p class="my_mobile_header">EG</p>
+	</div>
+	<div data-role="content">
+       	<ul data-role="listview" class="my_mobile_list">
+		    <li><a href="#wohnen"	style="padding:20px; text-align:center;">Wohnen</a></li>
+		    <li><a href="#kueche" 	style="padding:20px; text-align:center;">Küche</a></li>
+		    <li><a href="#gast"  	style="padding:20px; text-align:center;">Gast</a></li>
+		    <li><a href="#flur" 	style="padding:20px; text-align:center;">Flur</a></li>
+		    <li><a href="#bad_eg"  	style="padding:20px; text-align:center;">Bad</a></li>
+		    <li><a href="#kammer"	style="padding:20px; text-align:center;">Kammer</a></li>
+		</ul>
+  	</div>	
+	<div data-role="footer" data-position="fixed">
+
+	</div><!-- /footer -->
+</div> <!-- page: Startseite -->
+
+<!-- ****************************************************************************** -->	
+<!--																				-->
+<!--							page "OG"									-->
+<!--																				-->
+<!-- ****************************************************************************** -->	
+<div data-role="page" id="og" data-theme="d" >
+	<div data-role="header">
+		<a href="#" data-rel="back" data-icon="arrow-l" data-transition="slide" data-direction="reverse" class="my_back_btn" ></a>
+		<p class="my_mobile_header">OG</p>
+	</div>
+	<div data-role="content">
+       	<ul data-role="listview"  class="my_mobile_list">
+		    <li><a href="#studio"	style="padding:20px; text-align:center;">Studio</a></li>
+		    <li><a href="#schlafen" style="padding:20px; text-align:center;">Schlafen</a></li>
+		    <li><a href="#ankleide" style="padding:20px; text-align:center;">Ankleide</a></li>
+		    <li><a href="#bad_og"  	style="padding:20px; text-align:center;">Bad</a></li>
+		    <li><a href="#hwr" 		style="padding:20px; text-align:center;">HWR / Technik</a></li>
+		</ul>
+  	</div>	
+	<div data-role="footer" data-position="fixed">
+
+	</div><!-- /footer -->
+</div> <!-- page: Startseite -->	
+
+
+
+
+
+
+
+
+<!-- ****************************************************************************** -->	
+<!--																				-->
+<!--							page "Wetter" 										-->
+<!--																				-->
+<!-- ****************************************************************************** -->	
+<div data-role="page" id="wetter" data-fullscreen="true" data-theme="d" >
+	<div data-role="header">
+		<a href="#" data-rel="back" data-icon="arrow-l" data-transition="slide" data-direction="reverse" class="my_back_btn" ></a>
+		<p class="my_mobile_header">Wetter</p>
+	</div>
+	<div data-role="content" style="padding:25px; height:770px">
+	    <ul data-role="listview" class="my_wetter_list">
+           	<li class="my_li_tag_mobile" style="border-radius: 10px"> 
+           		<div class="ui-grid-a">
+					<div class="ui-block-a" style="width:50%; padding-right:5px"><p>Temperatur</p><p><input type="text" readonly="readonly"  id="Outdoortemp" class="my_input"></p></div>
+	    			<div class="ui-block-b" style="width:50%; padding-left:5px"><p><span id="GefTempText">No Value !!!</span></p><p><input type="text" readonly="readonly"id="GefTemp" class="my_input"></p>   </div><!-- /ui-block -->
+				</div><!-- /grid-b -->
+           		<div class="ui-grid-a">
+	         		<div class="ui-block-a" style="width:50%; padding-right:5px"><p>Max. 24H</p><p><input type="text" readonly="readonly" id="MaxTemp" class="my_input"></p></div>
+               	<div class="ui-block-b" style="width:50%; padding-left:5px"><p>Min. 24h</p><p><input type="text" readonly="readonly" id="MinTemp" class="my_input"></p></div>
+				</div>
+           	</li><br>
+           	<li class="my_li_tag_mobile">
+    
+	       		<div class="ui-grid-b">
+	         		<div class="ui-block-a" style="width:40%; padding-right:10px"><p>Wind</p><p><input type="text" readonly="readonly" id="Windspeed" class="my_input"></p></div>
+               		<div class="ui-block-b" style="width:20%;"><p>BFT</p><p><input type="text" readonly="readonly" id="Bft" class="my_input"></p></div>
+               		<div class="ui-block-c" style="width:40%; padding-left:10px"><p>Mittel (10m)</p><p><input type="text" readonly="readonly" id="WindspeedMittelwert"" class="my_input"></p></div>
+				</div>
+    
+	
+           		<div class="ui-grid-a">
+	         		<div class="ui-block-a" style="width:50%; padding-right:5px"><p>Wind Max (10min)</p><p><input type="text" readonly="readonly" id="WindspeedMax" class="my_input"></p></div>
+               		<div class="ui-block-b" style="width:50%; padding-left:5px"><p>Max Wind (24h)</p><p><input type="text" readonly="readonly" id="MaxWind" class="my_input"></p></div>
+				</div>
+    
+	       		<p>Windrichtung</p>
+   	       		<div class="ui-grid-a">
+	         		<div class="ui-block-a" style="width:50%; padding-right:5px"> <p><input type="text" readonly="readonly" id="WindDir" class="my_input"></p></div>
+               		<div class="ui-block-b" style="width:50%; padding-left:5px"><p><input type="text" readonly="readonly" id="WindDirStr" class="my_input"></p></div>
+				</div>
+   
+           	</li><br>
+              <li class="my_li_tag_mobile">
+                 	<p><span id="regen" style=" margin:left">No Value !!!</span></p>
+               	<div class="ui-grid-a">
+	         		<div class="ui-block-a" style="width:75%; padding-right:5px"><p><input type="text" readonly="readonly" id="Regen_1" class="my_input"></p></div>
+           	 		<div class="ui-block-b" style="width:25%; padding-right:5px"><p><input type="text" readonly="readonly" id="Regen_2" class="my_input"></p></div>
+				</div>
+				<p>Niederschlagsrate</p>	
+				 <div class="ui-grid-a">
+	         		<div class="ui-block-a" style="width:50%; padding-right:5px"><p>Rate</p><p><input type="text" readonly="readonly" id="RegenRate" class="my_input"></p></div>
+               		<div class="ui-block-b" style="width:50%; padding-left:5px"><p>Max. (10m)</p><p><input type="text" readonly="readonly" id="MaxRegenRate" class="my_input"></p></div>
+               </div>
+				<p>Niederschlag</p>	
+				 <div class="ui-grid-a">
+	         		<div class="ui-block-a" style="width:50%; padding-right:5px"><p>10m</p><p><input type="text" readonly="readonly" id="Regen10m" class="my_input"></p></div>
+               		<div class="ui-block-b" style="width:50%; padding-left:5px"><p>24h</p><p><input type="text" readonly="MaxRegenRate" id="Regen24h" class="my_input"></p></div>
+               </div>
+
+ 
+ 
+               	
+           	</li><br>
+    		<li class="my_li_tag_mobile">
+            	<div class="ui-grid-a">
+	         		<div class="ui-block-a" style="width:50%; padding-right:5px">  	<p>Luftdruck</p><p><input type="text" readonly="readonly" id="Luftdruck" class="my_input"></p></div>
+               		<div class="ui-block-b" style="width:50%; padding-left:5px">	<p>Luftfeuchtigkeit</p>	<p><input type="text" readonly="readonly" id="Luftfeuchtigkeit" class="my_input"></p></div>
+				</div>
+              
+            	<div class="ui-grid-a">
+	         		<div class="ui-block-a" style="width:50%; padding-right:5px"> 	<p>Luftdruck Trend 3h</p><p><input type="text" readonly="readonly" id="Luftdruck3h" class="my_input"></p></div>
+               		<div class="ui-block-b" style="width:50%; padding-left:5px">	<p>6h</p>	<p><input type="text" readonly="readonly" id="Luftdruck6h" class="my_input"></p></div>
+				</div>
+               
+               
+               
+           	</li><br>
+          		<li class="my_li_tag_mobile">
+               	<div class="ui-grid-a">
+	         		<div class="ui-block-a" style="width:50%; padding-right:5px"><p>Sonnenaufgang</p><p><input type="text" readonly="readonly"  id="Sunrise" class="my_input"></p></div>
+               		<div class="ui-block-b" style="width:50%; padding-left:5px"><p>Sonnenuntergang</p>	<p><input type="text" readonly="readonly" id="Sunset" class="my_input"></p></div>
+				</div>	
+           		
+           		<p>Sonnenstand</p>
+   	       		<div class="ui-grid-a">
+	         		<div class="ui-block-a" style="width:50%; padding-right:5px"> <p>Zenit</p><p><input type="text" readonly="readonly" id="SunZenit" class="my_input"></p></div>
+               		<div class="ui-block-b" style="width:50%; padding-left:5px"><p>Azimut</p><p><input type="text" readonly="readonly" id="SunAzimut" class="my_input"></p></div>
+				</div>
+               	
+           		
+ 
+           	</li><br>	
+              <li class="my_li_tag_mobile" style="border-radius: 10px">
+               	<p>Helligkeit</p>
+               	<p>Licht: </p>
+               	<p><input type="text" readonly="readonly"  id="Brightness" class="my_input"></p>
+               	<p>West: </p>
+               	<p><input type="text" readonly="readonly"  id="SunWest" class="my_input"></p>
+               	<p>Süd: </p>
+               	<p><input type="text" readonly="readonly"  id="SunSouth" class="my_input"></p>
+               	<p>Ost: </p>
+               	<p><input type="text" readonly="readonly"  id="SunEast" class="my_input"></p>
+               	<p>Dunkel:</p>
+               	<p><input type="text" readonly="readonly" id="Dusk" class="my_input"></p>
+           	</li><br>    	
+         </ul>
+		<br>	
+	</div>
+	<div data-role="footer" data-position="fixed">
+		
+	</div><!-- /footer -->
+
+</div> 
+<!-- ****************************************************************************** -->	
+
+
+
+
+<!-- ****************************************************************************** -->	
+<!--																				-->
+<!--							page "Windrose" 									-->
+<!--																				-->
+<!-- ****************************************************************************** -->	
+<div data-role="page" id="wetter3" data-fullscreen="true" data-theme="d" >
+	<div data-role="header">
+		<a href="#" data-rel="back" data-icon="arrow-l" data-transition="slide" data-direction="reverse" class="my_back_btn" ></a>
+		<p class="my_mobile_header">Wetter</p>
+	</div>
+	
+	<div data-role="content"  style="padding:25px; height:770px">
+		 <ul data-role="listview" class="my_wetter_list">
+		
+           	<li class="my_li_tag_am_kl" style="border-radius: 10px"> 	
+				<div id="container_windrose_klein" style="width:100%; height:100%;"></div>
+			</li>
+		</ul>
+	</div>	
+	
+
+	<div data-role="footer" data-position="fixed">
+		
+	</div><!-- /footer -->
+
+</div> 
+<!-- ****************************************************************************** -->	
+
+
+
+
+	
+<!-- ****************************************************************************** -->	
+<!--																				-->
+<!--							page "Video"										-->
+<!--																				-->
+<!-- ****************************************************************************** -->	
+<div data-role="page" id="video" data-theme="d">
+	<div data-role="header">
+		<a href="#" data-rel="back" data-icon="arrow-l" data-transition="slide" data-direction="reverse" class="my_back_btn" ></a>
+		<p class="my_mobile_header">Video</p>
+	</div>
+	<div data-role="content">
+		 <ul data-role="listview" class="my-video-list">
+       	  	<li class="my-video-tag"></li>	
+       	  </ul>
+	</div>	
+	<div data-role="footer" data-position="fixed">
+
+	</div><!-- /footer -->
+</div>
+<!-- ****************************************************************************** -->	
+	
+<!-- ****************************************************************************** -->	
+<!--																				-->
+<!--							page "Timer"										-->
+<!--																				-->
+<!-- ****************************************************************************** -->	
+<div data-role="page" id="timer" data-fullscreen="true" data-theme="d">
+	<div data-role="header" data-position="fixed">
+		<a href="#" data-rel="back" data-icon="arrow-l" data-transition="slide" data-direction="reverse" class="my_back_btn" ></a>
+		<p class="my_mobile_header">Timer</p>
+	</div>
+	<div data-role="content">
+		<div data-role="collapsible-set" class="my_timer_collapsable">
+			<div data-role="collapsible" data-collapsed="true">
+				<h4>Timer 1</h4>
+					<div class="ui-grid-d my_grid_class">
+						<div class="ui-block-a">
+							<label for="enable_timer_1">Aktiv:</label>
+							<select name="enable_timer_1" id="enable_timer_1" data-role="slider" disabled="disabled">
+				            	<option value="off">Off</option>
+				            	<option value="on">On</option>
+				            </select>
+						</div>	 <!-- ui-block-a -->
+							<div class="ui-block-b">
+		  					<label for="startzeit_timer_1">Startzeit:</label>
+							<input type="time" data-clear-btn="false" name="time_1" id="startzeit_timer_1" value="00:00" class="my-input" disabled="disabled">
+						</div>  <!-- ui-block-b -->
+		  				<div class="ui-block-c">
+		  				<label for="dauer_timer_1">Dauer:</label>
+						<input type="time" data-clear-btn="false" name="time_1" id="dauer_timer_1" value="00:00" disabled="disabled">
+					</div> <!-- ui-block-dc-->
+		  			<div class="ui-block-d">
+			  			<label for="select-native-fc">Funtktion:</label>
+						<select name="select_timer_1" id="select_timer_1" disabled="disabled" >
+						    <option value="0">Es wird kein Ausgangssignal erzeugt</option><option value="1">nur am Montag</option><option value="2">nur am Dienstag</option><option value="3">nur am Mittwoch</option><option value="4">nur am Donnerstag</option><option value="5">nur am Freitag</option><option value="6">nur am Samstag</option><option value="7">nur am Sonntag</option><option value="11">jeden Tag</option> <option value="12">alle 2 Tage</option><option value="13">alle 3 Tage</option> <option value="14">alle 4 Tage</option> <option value="15">alle 5 Tage</option><option value="16">alle 6 Tage</option><option value="20">Wochentage (Montag bis Freitag)</option><option value="21">Samstag und Sonntag</option><option value="22">Arbeitstage (Wochentage ohne Feiertage)</option><option value="23">Feiertage und Wochenende</option> <option value="24">Nur an Feiertagen</option><option value="25">Erster Tag im Monat</option> <option value="26">Letzter Tag im Monat</option>  <option value="27">Letzter Tag im Jahr (31. Dezember)</option> <option value="28">Erster Tag im Jahr (1. Januar)</option>
+				    	</select>
+					</div> <!-- ui-block-d -->
+					</div> <!-- ui-grid -->
+					<div class="ui-grid-solo">
+								<div class="ui-block-a"><div class="ui-bar ">
+						<label for="name_timer_1">Beschreibung:</label>
+						<input type="text" id="name_timer_1" class="my-input" disabled="disabled">
+			         </div></div>	 <!-- ui-block-a -->
+		
+				</div> <!-- ui-grid -->
+			</div> <!-- collapsible -->
+			<div data-role="collapsible" data-collapsed="true">
+				<h4>Timer 2</h4>
+					<div class="ui-grid-d my_grid_class">
+						<div class="ui-block-a">
+							<label for="enable_timer_2">Aktiv:</label>
+							<select name="enable_timer_2" id="enable_timer_2" data-role="slider">
+				            	<option value="off">Off</option>
+				            	<option value="on">On</option>
+				            </select>
+						</div>	 <!-- ui-block-a -->
+							<div class="ui-block-b">
+		  					<label for="startzeit_timer_2">Startzeit:</label>
+							<input type="time" data-clear-btn="false" name="time_2" id="startzeit_timer_2" value="00:00">
+						</div>  <!-- ui-block-b -->
+		  				<div class="ui-block-c">
+		  				<label for="dauer_timer_2">Dauer:</label>
+						<input type="time" data-clear-btn="false" name="time_2" id="dauer_timer_2" value="00:00">
+					</div> <!-- ui-block-dc-->
+		  			<div class="ui-block-d">
+			  			<label for="select-native-fc">Funtktion:</label>
+						<select name="select_timer_2" id="select_timer_2" >
+						    <option value="0">Es wird kein Ausgangssignal erzeugt</option><option value="1">nur am Montag</option><option value="2">nur am Dienstag</option><option value="3">nur am Mittwoch</option><option value="4">nur am Donnerstag</option><option value="5">nur am Freitag</option><option value="6">nur am Samstag</option><option value="7">nur am Sonntag</option><option value="11">jeden Tag</option> <option value="12">alle 2 Tage</option><option value="13">alle 3 Tage</option> <option value="14">alle 4 Tage</option> <option value="15">alle 5 Tage</option><option value="16">alle 6 Tage</option><option value="20">Wochentage (Montag bis Freitag)</option><option value="21">Samstag und Sonntag</option><option value="22">Arbeitstage (Wochentage ohne Feiertage)</option><option value="23">Feiertage und Wochenende</option> <option value="24">Nur an Feiertagen</option><option value="25">Erster Tag im Monat</option> <option value="26">Letzter Tag im Monat</option>  <option value="27">Letzter Tag im Jahr (31. Dezember)</option> <option value="28">Erster Tag im Jahr (1. Januar)</option>
+				    	</select>
+					</div> <!-- ui-block-d -->
+				</div> <!-- ui-grid -->
+				<div class="ui-grid-solo">
+								<div class="ui-block-a"><div class="ui-bar ">
+						<label for="name_timer_2">Beschreibung:</label>
+						<input type="text" id="name_timer_2" class="my-input" disabled="disabled">
+			         </div></div>	 <!-- ui-block-a -->
+		
+				</div> <!-- ui-grid -->
+		</div> <!-- collapsible -->
+			<div data-role="collapsible" data-collapsed="true">
+				<h4>Timer 3</h4>
+					<div class="ui-grid-d my_grid_class">
+						<div class="ui-block-a">
+							<label for="enable_timer_3">Aktiv:</label>
+							<select name="enable_timer_3" id="enable_timer_3" data-role="slider">
+				            	<option value="off">Off</option>
+				            	<option value="on">On</option>
+				            </select>
+						</div>	 <!-- ui-block-a -->
+							<div class="ui-block-b">
+		  					<label for="startzeit_timer_3">Startzeit:</label>
+							<input type="time" data-clear-btn="false" name="time_3" id="startzeit_timer_3" value="00:00">
+						</div>  <!-- ui-block-b -->
+		  				<div class="ui-block-c">
+		  				<label for="dauer_timer_3">Dauer:</label>
+						<input type="time" data-clear-btn="false" name="time_3" id="dauer_timer_3" value="00:00">
+					</div> <!-- ui-block-dc-->
+		  			<div class="ui-block-d">
+			  			<label for="select-native-fc">Funtktion:</label>
+						<select name="select_timer_3" id="select_timer_3" >
+						    <option value="0">Es wird kein Ausgangssignal erzeugt</option><option value="1">nur am Montag</option><option value="2">nur am Dienstag</option><option value="3">nur am Mittwoch</option><option value="4">nur am Donnerstag</option><option value="5">nur am Freitag</option><option value="6">nur am Samstag</option><option value="7">nur am Sonntag</option><option value="11">jeden Tag</option> <option value="12">alle 2 Tage</option><option value="13">alle 3 Tage</option> <option value="14">alle 4 Tage</option> <option value="15">alle 5 Tage</option><option value="16">alle 6 Tage</option><option value="20">Wochentage (Montag bis Freitag)</option><option value="21">Samstag und Sonntag</option><option value="22">Arbeitstage (Wochentage ohne Feiertage)</option><option value="23">Feiertage und Wochenende</option> <option value="24">Nur an Feiertagen</option><option value="25">Erster Tag im Monat</option> <option value="26">Letzter Tag im Monat</option>  <option value="27">Letzter Tag im Jahr (31. Dezember)</option> <option value="28">Erster Tag im Jahr (1. Januar)</option>
+				    	</select>
+					</div> <!-- ui-block-d -->
+				</div> <!-- ui-grid -->
+			<div class="ui-grid-solo">
+								<div class="ui-block-a"><div class="ui-bar ">
+						<label for="name_timer_3">Beschreibung:</label>
+						<input type="text" id="name_timer_3" class="my-input" disabled="disabled">
+			         </div></div>	 <!-- ui-block-a -->
+		
+				</div> <!-- ui-grid -->
+			</div> <!-- collapsible -->
+			<div data-role="collapsible" data-collapsed="true">
+				<h4>Timer 4</h4>
+					<div class="ui-grid-d my_grid_class">
+						<div class="ui-block-a">
+							<label for="enable_timer_4">Aktiv:</label>
+							<select name="enable_timer_4" id="enable_timer_4" data-role="slider">
+				            	<option value="off">Off</option>
+				            	<option value="on">On</option>
+				            </select>
+						</div>	 <!-- ui-block-a -->
+							<div class="ui-block-b">
+		  					<label for="startzeit_timer_4">Startzeit:</label>
+							<input type="time" data-clear-btn="false" name="time_4" id="startzeit_timer_4" value="00:00">
+						</div>  <!-- ui-block-b -->
+		  				<div class="ui-block-c">
+		  				<label for="dauer_timer_4">Dauer:</label>
+						<input type="time" data-clear-btn="false" name="time_4" id="dauer_timer_4" value="00:00">
+					</div> <!-- ui-block-dc-->
+		  			<div class="ui-block-d">
+			  			<label for="select-native-fc">Funtktion:</label>
+						<select name="select_timer_4" id="select_timer_4" >
+						    <option value="0">Es wird kein Ausgangssignal erzeugt</option><option value="1">nur am Montag</option><option value="2">nur am Dienstag</option><option value="3">nur am Mittwoch</option><option value="4">nur am Donnerstag</option><option value="5">nur am Freitag</option><option value="6">nur am Samstag</option><option value="7">nur am Sonntag</option><option value="11">jeden Tag</option> <option value="12">alle 2 Tage</option><option value="13">alle 3 Tage</option> <option value="14">alle 4 Tage</option> <option value="15">alle 5 Tage</option><option value="16">alle 6 Tage</option><option value="20">Wochentage (Montag bis Freitag)</option><option value="21">Samstag und Sonntag</option><option value="22">Arbeitstage (Wochentage ohne Feiertage)</option><option value="23">Feiertage und Wochenende</option> <option value="24">Nur an Feiertagen</option><option value="25">Erster Tag im Monat</option> <option value="26">Letzter Tag im Monat</option>  <option value="27">Letzter Tag im Jahr (31. Dezember)</option> <option value="28">Erster Tag im Jahr (1. Januar)</option>
+				    	</select>
+					</div> <!-- ui-block-d -->
+				</div> <!-- ui-grid -->
+				<div class="ui-grid-solo">
+								<div class="ui-block-a"><div class="ui-bar ">
+						<label for="name_timer_4">Beschreibung:</label>
+						<input type="text" id="name_timer_4" class="my-input" disabled="disabled">
+			         </div></div>	 <!-- ui-block-a -->
+		
+				</div> <!-- ui-grid -->
+		</div> <!-- collapsible -->
+			<div data-role="collapsible" data-collapsed="true">
+				<h4>Timer 5</h4>
+					<div class="ui-grid-d my_grid_class">
+						<div class="ui-block-a">
+							<label for="enable_timer_5">Aktiv:</label>
+							<select name="enable_timer_5" id="enable_timer_5" data-role="slider">
+				            	<option value="off">Off</option>
+				            	<option value="on">On</option>
+				            </select>
+						</div>	 <!-- ui-block-a -->
+							<div class="ui-block-b">
+		  					<label for="startzeit_timer_5">Startzeit:</label>
+							<input type="time" data-clear-btn="false" name="time_5" id="startzeit_timer_5" value="00:00">
+						</div>  <!-- ui-block-b -->
+		  				<div class="ui-block-c">
+		  				<label for="dauer_timer_5">Dauer:</label>
+						<input type="time" data-clear-btn="false" name="time_5" id="dauer_timer_5" value="00:00">
+					</div> <!-- ui-block-dc-->
+		  			<div class="ui-block-d">
+			  			<label for="select-native-fc">Funtktion:</label>
+						<select name="select_timer_5" id="select_timer_5" >
+						    <option value="0">Es wird kein Ausgangssignal erzeugt</option><option value="1">nur am Montag</option><option value="2">nur am Dienstag</option><option value="3">nur am Mittwoch</option><option value="4">nur am Donnerstag</option><option value="5">nur am Freitag</option><option value="6">nur am Samstag</option><option value="7">nur am Sonntag</option><option value="11">jeden Tag</option> <option value="12">alle 2 Tage</option><option value="13">alle 3 Tage</option> <option value="14">alle 4 Tage</option> <option value="15">alle 5 Tage</option><option value="16">alle 6 Tage</option><option value="20">Wochentage (Montag bis Freitag)</option><option value="21">Samstag und Sonntag</option><option value="22">Arbeitstage (Wochentage ohne Feiertage)</option><option value="23">Feiertage und Wochenende</option> <option value="24">Nur an Feiertagen</option><option value="25">Erster Tag im Monat</option> <option value="26">Letzter Tag im Monat</option>  <option value="27">Letzter Tag im Jahr (31. Dezember)</option> <option value="28">Erster Tag im Jahr (1. Januar)</option>
+				    	</select>
+					</div> <!-- ui-block-d -->
+				</div> <!-- ui-grid -->
+				<div class="ui-grid-solo">
+								<div class="ui-block-a"><div class="ui-bar ">
+						<label for="name_timer_5">Beschreibung:</label>
+						<input type="text" id="name_timer_5" class="my-input" disabled="disabled">
+			         </div></div>	 <!-- ui-block-a -->
+		
+				</div> <!-- ui-grid -->
+		</div> <!-- collapsible -->
+		
+
+</div>  <!-- Collapsible Set -->
+		
+		<div data-role="fieldcontain" class="my_setup_button_fieldcontain">
+		<input type="text" readonly="true" id="control">
+		<button name="Laden" type="button" id="read_struct" data-inline="true" class="my_setup_button_laden">Laden</button>  
+		<button name="Speichern" type="button" id="save_struct" data-inline="true" disabled="enabled" class="my_setup_button_speichern">Speichern</button>  
+</div>
+	</div>
+	<div data-role="footer" data-position="fixed">
+	
+	</div><!-- /footer -->
+</div>
+<!-- ****************************************************************************** -->	
+
+<!-- ****************************************************************************** -->	
+<!--																				-->
+<!--							page "Technik"										-->
+<!--																				-->
+<!-- ****************************************************************************** -->	
+<div data-role="page" id="technik" data-fullscreen="true" data-theme="d">
+	<div data-role="header" data-position="fixed">
+		<a href="#" data-rel="back" data-icon="arrow-l" data-transition="slide" data-direction="reverse" class="my_back_btn" ></a>
+		<p class="my_mobile_header">Technik</p>
+	</div>
+	<div data-role="content">
+
+	    <ul data-role="listview" class="my_wetter_list">
+           	<li class="my_li_tag_mobile" style="border-radius: 10px"> 
+           	    <p>Heizung</p>
+           		<p>Vorlauftemperatur:</p>
+               	<p><input type="text" readonly="readonly" id="temp_wp_vl" class="my_input"></p>
+       	 		<p>Rücklauftemperatur:</p>
+               	<p><input type="text" readonly="readonly" id="temp_wp_rl" class="my_input"></p>
+       	 		<p>Leistung</p>
+               	<p><input type="text" readonly="readonly" id="wp_leistung" class="my_input"></p>
+       			<p>Warmwasser</p>
+       		   	<p>Speicher oben:</p>
+               	<p><input type="text" readonly="readonly" id="temp_ww_oben" class="my_input"></p>
+        		<p>Speicher unten:</p>
+               	<p><input type="text" readonly="readonly" id="temp_ww_unten" class="my_input"></p>
+       	
+           	</li></ul><br>
+	</div>
+	<div data-role="footer" data-position="fixed">
+	
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+
+<!-- ****************************************************************************** -->	
+<!--																				-->
+<!--							page "Lüftung"										-->
+<!--																				-->
+<!-- ****************************************************************************** -->	
+<div data-role="page" id="lueftung" data-fullscreen="true" data-theme="d">
+	<div data-role="header" data-position="fixed">
+		<a href="#" data-rel="back" data-icon="arrow-l" data-transition="slide" data-direction="reverse" class="my_back_btn" ></a>
+		<p class="my_mobile_header">Lüftung</p>
+	</div>
+	<div data-role="content">
+
+	    <ul data-role="listview" class="my_wetter_list">
+           	<li class="my_li_tag_mobile" style="border-radius: 10px"> 
+           	    <p>Status</p>
+           	    <p><input type="text" readonly="readonly"  id="betrieb" class="my_input"></p>
+       			<button name="Speichern" type="button" id="standby" data-inline="true"  class="my_setup_button_speichern">Standby</button>
+	 			<button name="Speichern" type="button" id="stosslueftung" data-inline="true"  class="my_setup_button_speichern">Stosslüftung</button>				 	
+	            <label for="sommerbetrieb" style="text-align: center; width:240px;">Sommerbetrieb</label>
+        		<input type="checkbox" id="sommerbetrieb" name="sommerbetrieb" ></input>
+			 	<p>Schaltschwelle</p>
+               	<p><input type="text" readonly="readonly" id="schaltschwelle" class="my_input"></p>
+       	 		<p>Hysterese</p>
+               	<p><input type="text" readonly="readonly" id="hysterese" class="my_input"></p>
+       	 		<p>Innentemperatur</p>
+               	<p><input type="text" readonly="readonly" id="innentemperatur" class="my_input"></p>
+       	 		<p>Außentemperatur</p>
+               	<p><input type="text" readonly="readonly" id="aussentemperatur" class="my_input"></p>
+       			<p>Ablufttemperatur</p>
+               	<p><input type="text" readonly="readonly" id="ablufttemperatur" class="my_input"></p>
+        		<p>Zulufttemperatur</p>
+               	<p><input type="text" readonly="readonly" id="zulufttemperatur" class="my_input"></p>
+       		 	<p>Fortlufttemperatur</p>
+               	<p><input type="text" readonly="readonly" id="fortlufttemperatur" class="my_input"></p>
+       	 		<p>Frischlufttemperatur</p>
+               	<p><input type="text" readonly="readonly" id="frischlufttemperatur" class="my_input"></p>
+       	
+           	</li</ul><br>
+	</div>
+	<div data-role="footer" data-position="fixed">
+	
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+
+<!-- ****************************************************************************** -->	
+<!--																				-->
+<!--					Raumtemperaturen											-->
+<!--																				-->
+<!-- ****************************************************************************** -->		
+
+<div data-role="page" id="raumtemp" data-theme="d" >
+	<div data-role="header">
+		<a href="#" data-rel="back" data-icon="arrow-l" data-transition="slide" data-direction="reverse" class="my_back_btn" ></a>
+		<p class="my_mobile_header">Temperaturen</p>
+	</div>
+	<div data-role="content">
+       	<ul data-role="listview"  class="my_mobile_list">
+    	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Flur</div>	<div class="ui-block-b" style="text-align:center"><input type="text" style="text-align:center" readonly="readonly" class="my-input" id="temp201"></input></div></div></li>
+    	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Gast</div>	<div class="ui-block-b" style="text-align:center"><input type="text" style="text-align:center" readonly="readonly" class="my-input" id="temp202"></input></div></div></li>
+    	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Wohnen</div>	<div class="ui-block-b" style="text-align:center"><input type="text" style="text-align:center" readonly="readonly" class="my-input" id="temp203"></input></div></div></li>
+    	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Küche</div>	<div class="ui-block-b" style="text-align:center"><input type="text" style="text-align:center" readonly="readonly" class="my-input" id="temp204"></input></div></div></li>
+    	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Bad EG</div>	<div class="ui-block-b" style="text-align:center"><input type="text" style="text-align:center" readonly="readonly" class="my-input" id="temp205"></input></div></div></li>
+    	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Studio</div>	<div class="ui-block-b" style="text-align:center"><input type="text" style="text-align:center" readonly="readonly" class="my-input" id="temp206"></input></div></div></li>
+    	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Schlafen</div>	<div class="ui-block-b" style="text-align:center"><input type="text" style="text-align:center" readonly="readonly" class="my-input" id="temp207"></input></div></div></li>
+    	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Bad</div>	<div class="ui-block-b" style="text-align:center"><input type="text" style="text-align:center" readonly="readonly" class="my-input" id="temp208"></input></div></div></li>
+    	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Ankleide</div>	<div class="ui-block-b" style="text-align:center"><input type="text" style="text-align:center" readonly="readonly" class="my-input" id="temp209"></input></div></div></li>
+    	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">HWR</div>	<div class="ui-block-b" style="text-align:center"><input type="text" style="text-align:center" readonly="readonly" class="my-input" id="temp210"></input></div></div></li>
+		</ul>
+   </div>
+</div> <!-- page: Startseite -->
+
+
+ 
+<!-- ****************************************************************************** -->	
+<!--																				-->
+<!--								WetterCahrt										-->
+<!--																				-->
+<!-- ****************************************************************************** -->		
+
+	
+<div data-role="page" id="wetterchart"  data-fullscreen="true" data-position="fixed" data-theme="d">
+	<div data-role="header" data-position="fixed">
+		<a href="#" data-rel="back" data-icon="arrow-l" data-transition="slide" data-direction="reverse" class="my_back_btn" ></a>
+		<p class="my_mobile_header">Wetterchart</p>
+	</div>
+	<div data-role="content">
+		
+		
+		
+		<div data-role="fieldcontain" style="margin-left:25px; margin-right:25px; height:700px">
+			<div id="container"></div>
+			<br><br>
+		</div>
+	</div>	
+	<div data-role="footer" data-fullscreen="true" data-position="fixed">
+		
+	</div><!-- /footer -->
+</div>	
+<!-- ****************************************************************************** -->	
+
+<!-- ****************************************************************************** -->	
+<!--																				-->
+<!--								page Dimmer										-->
+<!--																				-->
+<!-- ****************************************************************************** -->		
+<div data-role="page" id="dimmer" data-theme="d" class="my_raum_list" data-fullscreen="true">
+	<div data-role="header"  data-position="fixed">
+		<a href="#" data-rel="back" data-icon="arrow-l" data-transition="slide" data-direction="reverse" class="my_back_btn" ></a>
+		<p class="my_mobile_header">Dimmer</p>
+	</div>
+	<div data-role="content"  style="height:350px">
+	
+		<ul data-role="listview" data-inline="true">
+				<li>
+				<div class="ui-grid-solo my_raum_list" >
+						<div class="ui-block-a"><div class="ui-bar "><input type="text" style="text-align:center" readonly="readonly" class="my-input" id="dim_value"></input></div></div>
+					</div>
+					<div class="ui-grid-a" >
+						<div class="ui-block-a"><div class="ui-bar "><button name="dunkler" type="button" id="btn_dim_dwn"> - </button></div></div>
+						<div class="ui-block-b"><div class="ui-bar "><button name="heller" type="button" id="btn_dim_up"> + </button></div></div>
+					</div><!-- /grid-b -->
+					<div class="ui-grid-solo">
+						<div class="ui-block-a"><div class="ui-bar "><input type="range" name="slider" id="slider_dim" data-highlight="true" min="0" max="100"></input></div></div>
+					</div>
+					<div class="ui-grid-a">
+						<div class="ui-block-a"><div class="ui-bar " ><button name="Off" type="button" id="btn_dim_off">Aus</button></div></div>        					
+	   					<div class="ui-block-b"><div class="ui-bar " ><button name="Set" type="button" id="btn_dim_set">Set</button></div></div>        					
+					</div>
+				</li>
+			</ul>
+	
+	</div>	
+	<div data-role="footer" data-fullscreen="true" data-position="fixed">
+		
+	</div><!-- /footer -->
+</div>	
+
+<!-- ****************************************************************************** -->	
+
+<!-- ****************************************************************************** -->	
+<!--																				-->
+<!--								page Raffstore									-->
+<!--																				-->
+<!-- ****************************************************************************** -->		
+<div data-role="page" id="raffstore" data-theme="d" class="my_raum_list" data-fullscreen="true">
+	<div data-role="header"  data-position="fixed">
+		<a href="#" data-rel="back" data-icon="arrow-l" data-transition="slide" data-direction="reverse" class="my_back_btn" ></a>
+		<p class="my_mobile_header">Raffstore</p>
+	</div>
+	<div data-role="content"  style="height:450px">
+	
+		<ul data-role="listview" data-inline="true">
+				<li>
+					<div class="ui-grid-a">
+						<div class="ui-block-a" style="width:25%; padding:23px">Höhe:</div>
+	    				<div class="ui-block-b" style="width:75%"><input type="range" name="slider" id="slider_raff_pos" data-highlight="true" min="0" max="100"></input></div><!-- /ui-block -->
+					</div><!-- /grid-b -->
+					<div class="ui-grid-a">
+						<div class="ui-block-a" style="width:25%; padding:13px">Winkel:</div>
+						<div class="ui-block-b" style="width:75%"><input type="range" name="slider" id="slider_raff_ang" data-highlight="true" min="0" max="100"></input></div><!-- /ui-block -->
+					</div>
+					<div class="ui-grid-solo" >
+						<div class="ui-block-a"><div class="ui-bar "><button name="dunkler" type="button" id="btn_raff_set">Set</button></div></div>
+					</div>
+					<div class="ui-grid-solo" >
+						<!--<div class="ui-block-a"><div style="height:50px; background:#333333"><button name="verschatten" type="button" id="btn_raff_sun_eg">Verschattung</button>
+						  --><label for="btn_raff_sun" style="text-align: center;">Verschattung</label>
+        					<div class="ui-bar "><input type="checkbox" id="btn_raff_sun" name="sun" ></input></div>
+        			</div>
+					<div class="ui-grid-solo" >
+						<label for="btn_raff_tracking" style="text-align: center">Disable Tracking</label>
+						<div class="ui-bar "><input type="checkbox" id="btn_raff_tracking" name="tracking" ></input></div>
+					</div><!-- /grid-b -->				
+					<div class="ui-grid-a" >
+						<div class="ui-block-a"><div class="ui-bar "><button name="heller" type="button" id="btn_raff_up">Auf</button></div></div>
+						<div class="ui-block-b"><div class="ui-bar "><button name="dunkler" type="button" id="btn_raff_dwn">Zu</button></div></div>
+					</div>
+					
+				</li>
+			</ul>
+	
+	</div>	
+	<div data-role="footer" data-fullscreen="true" data-position="fixed">
+		
+	</div><!-- /footer -->
+</div>	
+
+
+<!-- ****************************************************************************** -->	
+<!--																				-->
+<!--								page Flur											-->
+<!--																				-->
+<!-- ****************************************************************************** -->		
+<div data-role="page" id="flur" data-theme="d" class="my_raum_list" data-fullscreen="true" style="">
+	<div data-role="header"  data-position="fixed">
+		<a href="#" data-rel="back" data-icon="arrow-l" data-transition="slide" data-direction="reverse" class="my_back_btn" ></a>
+		<p class="my_mobile_header">Flur</p>
+	</div>
+	<div data-role="content">
+		<ul data-role="listview">
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Temperatur</div>	<div class="ui-block-b" style="text-align:center"><input type="text" style="text-align:center" readonly="readonly" class="my-input" id="temp101"></input></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Dimmer Flur</div>	<div class="ui-block-b" style="text-align:center"><a href="#dimmer" id="dimmer101" class="my_li_dimm"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Dimmer Treppe</div>	<div class="ui-block-b" style="text-align:center"><a href="#dimmer" id="dimmer102" class="my_li_dimm"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 1</div><div class="ui-block-b" style="text-align:center"><a href="#" 			id="steckdose101" class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 2</div><div class="ui-block-b" style="text-align:center"><a href="#" 			id="steckdose102" class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 3</div><div class="ui-block-b" style="text-align:center"><a href="#" 			id="steckdose103" class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 4</div><div class="ui-block-b" style="text-align:center"><a href="#" 			id="steckdose104" class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 5</div><div class="ui-block-b" style="text-align:center"><a href="#" 			id="steckdose105" class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Raffstore</div><div class="ui-block-b" style="text-align:center"><a href="#raffstore" 	id="raffstore101" class="my_li_raffstore"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Haustür</div><div class="ui-block-b" style="text-align:center"><a href="#" 				id="fenster101" class="my_li_raffstore"></a></div></div></li>
+      	</ul>
+	</div> <!-- data-role="content" -->		
+</div> <!-- page:  -->
+
+<!-- ****************************************************************************** -->	
+<!--																				-->
+<!--							page "Gast"										-->
+<!--																				-->
+<!-- ****************************************************************************** -->	
+<div data-role="page" id="gast" data-theme="d" >
+	<div data-role="header">
+		<a href="#" data-rel="back" data-icon="arrow-l" data-transition="slide" data-direction="reverse" class="my_back_btn" ></a>
+		<p class="my_mobile_header">Gast</p>
+	</div>
+	<div data-role="content">
+     	<ul data-role="listview">
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Temperatur</div>	<div class="ui-block-b" style="text-align:center"><input type="text" style="text-align:center" readonly="readonly" class="my-input" id="temp102"></input></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 1</div><div class="ui-block-b" style="text-align:center"><a href="#" 	 		id="steckdose106" 	class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 2</div><div class="ui-block-b" style="text-align:center"><a href="#" 			id="steckdose107" 	class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 3</div><div class="ui-block-b" style="text-align:center"><a href="#" 			id="steckdose108" 	class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 4</div><div class="ui-block-b" style="text-align:center"><a href="#" 			id="steckdose109" 	class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 5</div><div class="ui-block-b" style="text-align:center"><a href="#" 			id="steckdose110" 	class="my_li_steck"></a></div></div></li>
+    	  	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 6</div><div class="ui-block-b" style="text-align:center"><a href="#" 			id="steckdose111" 	class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Raffstore 1</div><div class="ui-block-b" style="text-align:center"><a href="#raffstore" 	id="raffstore102" 	class="my_li_raffstore"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Raffstore 2</div><div class="ui-block-b" style="text-align:center"><a href="#raffstore" 	id="raffstore103" 	class="my_li_raffstore"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Fenster</div><div class="ui-block-b" style="text-align:center"><a href="#" 			id="fenster102" 	class="my_li_fenster"></a></div></div></li>
+    	</ul>
+   </div>
+</div> <!-- page: Startseite -->
+
+<!-- ****************************************************************************** -->	
+<!--																				-->
+<!--							page "Wohnen"										-->
+<!--																				-->
+<!-- ****************************************************************************** -->	
+<div data-role="page" id="wohnen" data-theme="d" >
+	<div data-role="header">
+		<a href="#" data-rel="back" data-icon="arrow-l" data-transition="slide" data-direction="reverse" class="my_back_btn" ></a>
+		<p class="my_mobile_header">Wohnen</p>
+	</div>
+	<div data-role="content">
+     	<ul data-role="listview">
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Temperatur</div>	<div class="ui-block-b" style="text-align:center"><input type="text" style="text-align:center" readonly="readonly" class="my-input" id="temp103"></input></div></div></li>
+        	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Dimmer 1</div>	<div class="ui-block-b" style="text-align:center"><a href="#dimmer" 	id="dimmer103" class="my_li_dimm"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Dimmer 2</div>	<div class="ui-block-b" style="text-align:center"><a href="#dimmer" 	id="dimmer104" class="my_li_dimm"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">TV</div><div class="ui-block-b" style="text-align:center"><a href="#" 					id="steckdose112" class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">HiFi</div><div class="ui-block-b" style="text-align:center"><a href="#" 					id="steckdose113" class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 3</div><div class="ui-block-b" style="text-align:center"><a href="#"  			id="steckdose114" class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 4</div><div class="ui-block-b" style="text-align:center"><a href="#"  			id="steckdose115" class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 5</div><div class="ui-block-b" style="text-align:center"><a href="#"  			id="steckdose116" class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 6</div><div class="ui-block-b" style="text-align:center"><a href="#"  			id="steckdose117" class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Raffstore 1</div><div class="ui-block-b" style="text-align:center"><a href="#raffstore"	id="raffstore104" class="my_li_raffstore"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Raffstore 2</div><div class="ui-block-b" style="text-align:center"><a href="#raffstore"	id="raffstore105" class="my_li_raffstore"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Fenster 1</div><div class="ui-block-b" style="text-align:center"><a href="#" 			id="fenster103" 	class="my_li_fenster"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Fenster 2</div><div class="ui-block-b" style="text-align:center"><a href="#" 			id="fenster104" 	class="my_li_fenster"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Fenster 3</div><div class="ui-block-b" style="text-align:center"><a href="#" 			id="fenster105" 	class="my_li_fenster"></a></div></div></li>
+    	</ul>
+	</div>
+</div> <!-- page: Startseite -->
+
+<!-- ****************************************************************************** -->	
+<!--																				-->
+<!--							page "Küche"										-->
+<!--																				-->
+<!-- ****************************************************************************** -->	
+<div data-role="page" id="kueche" data-theme="d" >
+	<div data-role="header">
+		<a href="#" data-rel="back" data-icon="arrow-l" data-transition="slide" data-direction="reverse" class="my_back_btn" ></a>
+		<p class="my_mobile_header">Küche</p>
+	</div>
+	<div data-role="content">
+     	<ul data-role="listview">
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Temperatur</div>	<div class="ui-block-b" style="text-align:center"><input type="text" style="text-align:center" readonly="readonly" class="my-input" id="temp104"></input></div></div></li>
+        	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Dimmer Herd</div>	<div class="ui-block-b" style="text-align:center"><a href="#dimmer" 	id="dimmer105" class="my_li_dimm"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Dimmer Essen</div>	<div class="ui-block-b" style="text-align:center"><a href="#dimmer" 	id="dimmer106" class="my_li_dimm"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Dimmer Küche</div>	<div class="ui-block-b" style="text-align:center"><a href="#dimmer" 	id="dimmer107" class="my_li_dimm"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">TwistPort Herd</div><div class="ui-block-b" style="text-align:center"><a href="#" 		id="steckdose118" class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Twistport Küche</div><div class="ui-block-b" style="text-align:center"><a href="#" 		id="steckdose119" class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 3</div><div class="ui-block-b" style="text-align:center"><a href="#"  			id="steckdose121" class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 4</div><div class="ui-block-b" style="text-align:center"><a href="#" 			id="steckdose122" class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 5</div><div class="ui-block-b" style="text-align:center"><a href="#"  			id="steckdose123" class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 6</div><div class="ui-block-b" style="text-align:center"><a href="#"  			id="steckdose124" class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 7</div><div class="ui-block-b" style="text-align:center"><a href="#"  			id="steckdose125" class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 8</div><div class="ui-block-b" style="text-align:center"><a href="#"  			id="steckdose126" class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 9</div><div class="ui-block-b" style="text-align:center"><a href="#"  			id="steckdose127" class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Spülmaschine </div><div class="ui-block-b" style="text-align:center"><a href="#"  		id="steckdose128" class="my_li_steck"></a></div></div></li>
+          	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Fenster</div><div class="ui-block-b" style="text-align:center"><a href="#" 			id="fenster106" 	class="my_li_fenster"></a></div></div></li>
+    	</ul>
+   </div>
+  
+</div> <!-- page: Startseite -->
+
+<!-- ****************************************************************************** -->	
+<!--																				-->
+<!--							page "Abstellkammer"										-->
+<!--																				-->
+<!-- ****************************************************************************** -->	
+<div data-role="page" id="kammer" data-theme="d" >
+	<div data-role="header">
+		<a href="#" data-rel="back" data-icon="arrow-l" data-transition="slide" data-direction="reverse" class="my_back_btn" ></a>
+		<p class="my_mobile_header">Abstell.</p>
+	</div>
+	<div data-role="content">
+     	<ul data-role="listview">
+        	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Licht</div>	<div class="ui-block-b" style="text-align:center"><a href="#" 			id="lampe101" 	class="my_li_lampe"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 1</div>	<div class="ui-block-b" style="text-align:center"><a href="#" 	id="steckdose129" 	class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 2</div>	<div class="ui-block-b" style="text-align:center"><a href="#" 	id="steckdose130" 	class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 3</div><div class="ui-block-b" style="text-align:center"><a href="#" 				id="steckdose131" class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 4</div><div class="ui-block-b" style="text-align:center"><a href="#" 				id="steckdose132" class="my_li_steck"></a></div></div></li>
+       </ul>
+   </div>
+</div> <!-- page: Startseite -->
+
+<!-- ****************************************************************************** -->	
+<!--																				-->
+<!--							page "Gästebad"										-->
+<!--																				-->
+<!-- ****************************************************************************** -->	
+<div data-role="page" id="bad_eg" data-theme="d" >
+	<div data-role="header">
+		<a href="#" data-rel="back" data-icon="arrow-l" data-transition="slide" data-direction="reverse" class="my_back_btn" ></a>
+		<p class="my_mobile_header">Bad</p>
+	</div>
+	<div data-role="content">
+     	<ul data-role="listview">
+        	 <li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Temperatur</div>	<div class="ui-block-b" style="text-align:center"><input type="text" style="text-align:center" readonly="readonly" class="my-input" id="temp105"></input></div></div></li>
+        	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Licht</div>	<div class="ui-block-b" style="text-align:center"><a href="#" 			id="lampe102" 	class="my_li_lampe"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 1</div>	<div class="ui-block-b" style="text-align:center"><a href="#" 	id="steckdose133" 	class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 2</div>	<div class="ui-block-b" style="text-align:center"><a href="#" 	id="steckdose134" 	class="my_li_steck"></a></div></div></li>
+          	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Fenster</div><div class="ui-block-b" style="text-align:center"><a href="#" 			id="fenster107" 	class="my_li_fenster"></a></div></div></li>
+    	</ul>
+   </div>
+</div> <!-- page: Startseite -->
+
+<!-- ****************************************************************************** -->	
+<!--																				-->
+<!--								page Studio										-->
+<!--																				-->
+<!-- ****************************************************************************** -->		
+
+<div data-role="page" id="studio" data-theme="d" >
+	<div data-role="header">
+		<a href="#" data-rel="back" data-icon="arrow-l" data-transition="slide" data-direction="reverse" class="my_back_btn" ></a>
+		<p class="my_mobile_header">Studio</p>
+	</div>
+	<div data-role="content">
+     	<ul data-role="listview">
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Temperatur</div>	<div class="ui-block-b" style="text-align:center"><input type="text" style="text-align:center" readonly="readonly" class="my-input" id="temp106"></input></div></div></li>
+        	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 1</div>	<div class="ui-block-b" style="text-align:center"><a href="#" 	id="steckdose135" 	class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 2</div>	<div class="ui-block-b" style="text-align:center"><a href="#" 	id="steckdose136" 	class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 3</div>	<div class="ui-block-b" style="text-align:center"><a href="#" 	id="steckdose137" 	class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 4</div>	<div class="ui-block-b" style="text-align:center"><a href="#" 	id="steckdose138" 	class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 5</div>	<div class="ui-block-b" style="text-align:center"><a href="#" 	id="steckdose139" 	class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 6</div>	<div class="ui-block-b" style="text-align:center"><a href="#" 	id="steckdose140" 	class="my_li_steck"></a></div></div></li>
+          	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Raffstore 1</div><div class="ui-block-b" style="text-align:center"><a href="#raffstore"	id="raffstore106" class="my_li_raffstore"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Raffstore 2</div><div class="ui-block-b" style="text-align:center"><a href="#raffstore"	id="raffstore107" class="my_li_raffstore"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Raffstore 3</div><div class="ui-block-b" style="text-align:center"><a href="#raffstore"	id="raffstore108" class="my_li_raffstore"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Raffstore 4</div><div class="ui-block-b" style="text-align:center"><a href="#raffstore"	id="raffstore109" class="my_li_raffstore"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Raffstore 5</div><div class="ui-block-b" style="text-align:center"><a href="#raffstore"	id="raffstore110" class="my_li_raffstore"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Fenster</div><div class="ui-block-b" style="text-align:center"><a href="#" 			id="fenster108" 	class="my_li_fenster"></a></div></div></li>
+        </ul>
+   </div>
+</div> <!-- page: Startseite -->
+
+<!-- ****************************************************************************** -->	
+<!--																				-->
+<!--								page Schlafen									-->
+<!--																				-->
+<!-- ****************************************************************************** -->		
+
+<div data-role="page" id="schlafen" data-theme="d" >
+	<div data-role="header">
+		<a href="#" data-rel="back" data-icon="arrow-l" data-transition="slide" data-direction="reverse" class="my_back_btn" ></a>
+		<p class="my_mobile_header">Schlafen</p>
+	</div>
+	<div data-role="content">
+     	<ul data-role="listview">
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Temperatur</div>	<div class="ui-block-b" style="text-align:center"><input type="text" style="text-align:center" readonly="readonly" class="my-input" id="temp107"></input></div></div></li>
+        	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Licht</div>	<div class="ui-block-b" style="text-align:center"><a href="#" 			id="lampe103" 	class="my_li_lampe"></a></div></div></li>
+ 			<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Dimmer Ina</div>	<div class="ui-block-b" style="text-align:center"><a href="#dimmer" 		id="dimmer110" class="my_li_dimm"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Dimmer Holger</div>	<div class="ui-block-b" style="text-align:center"><a href="#dimmer" 	id="dimmer111" class="my_li_dimm"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 1</div>	<div class="ui-block-b" style="text-align:center"><a href="#" 	id="steckdose141" 	class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 2</div>	<div class="ui-block-b" style="text-align:center"><a href="#" 	id="steckdose142" 	class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 3</div>	<div class="ui-block-b" style="text-align:center"><a href="#" 	id="steckdose143" 	class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 4</div>	<div class="ui-block-b" style="text-align:center"><a href="#" 	id="steckdose144" 	class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 5</div>	<div class="ui-block-b" style="text-align:center"><a href="#" 	id="steckdose145" 	class="my_li_steck"></a></div></div></li>
+          	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Raffstore 1</div><div class="ui-block-b" style="text-align:center"><a href="#raffstore"	id="raffstore111" class="my_li_raffstore"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Raffstore 2</div><div class="ui-block-b" style="text-align:center"><a href="#raffstore"	id="raffstore112" class="my_li_raffstore"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Fenster</div><div class="ui-block-b" style="text-align:center"><a href="#" 			id="fenster109" 	class="my_li_fenster"></a></div></div></li>
+        </ul>
+   </div>
+</div> <!-- page: Startseite -->
+
+<!-- ****************************************************************************** -->	
+<!--																				-->
+<!--								page Bad OG									-->
+<!--																				-->
+<!-- ****************************************************************************** -->		
+
+<div data-role="page" id="bad_og" data-theme="d" >
+	<div data-role="header">
+		<a href="#" data-rel="back" data-icon="arrow-l" data-transition="slide" data-direction="reverse" class="my_back_btn" ></a>
+		<p class="my_mobile_header">Bad</p>
+	</div>
+	<div data-role="content">
+     	<ul data-role="listview">
+ 	   		<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Temperatur</div>	<div class="ui-block-b" style="text-align:center"><input type="text" style="text-align:center" readonly="readonly" class="my-input" id="temp108"></input></div></div></li>
+        	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Dimmer</div>	<div class="ui-block-b" style="text-align:center"><a href="#dimmer" 		id="dimmer108" class="my_li_dimm"></a></div></div></li>
+          	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Spiegelschrank</div>	<div class="ui-block-b" style="text-align:center"><a href="#" 	id="steckdose147" 	class="my_li_lampe"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 1</div>	<div class="ui-block-b" style="text-align:center"><a href="#" 	id="steckdose146" 	class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 2</div>	<div class="ui-block-b" style="text-align:center"><a href="#" 	id="steckdose148" 	class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Fenster</div><div class="ui-block-b" style="text-align:center"><a href="#" 			id="fenster110" 	class="my_li_fenster"></a></div></div></li>
+        </ul>
+   </div>
+</div> <!-- page: Startseite -->
+
+<!-- ****************************************************************************** -->	
+<!--																				-->
+<!--								page Ankleide									-->
+<!--																				-->
+<!-- ****************************************************************************** -->		
+
+<div data-role="page" id="ankleide" data-theme="d" >
+	<div data-role="header">
+		<a href="#" data-rel="back" data-icon="arrow-l" data-transition="slide" data-direction="reverse" class="my_back_btn" ></a>
+		<p class="my_mobile_header">Ankleider</p>
+	</div>
+	<div data-role="content">
+     	<ul data-role="listview">
+ 		   	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Temperatur</div>	<div class="ui-block-b" style="text-align:center"><input type="text" style="text-align:center" readonly="readonly" class="my-input" id="temp109"></input></div></div></li>
+        	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Dimmer</div>	<div class="ui-block-b" style="text-align:center"><a href="#dimmer" 		id="dimmer109" class="my_li_dimm"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 1</div>	<div class="ui-block-b" style="text-align:center"><a href="#" 	id="steckdose149" 	class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 2</div>	<div class="ui-block-b" style="text-align:center"><a href="#" 	id="steckdose150" 	class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 3</div>	<div class="ui-block-b" style="text-align:center"><a href="#" 	id="steckdose151" 	class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 4</div>	<div class="ui-block-b" style="text-align:center"><a href="#" 	id="steckdose152" 	class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Fenster</div><div class="ui-block-b" style="text-align:center"><a href="#" 			id="fenster111" 	class="my_li_fenster"></a></div></div></li>
+        </ul>
+   </div>
+</div> <!-- page: Startseite -->
+
+<!-- ****************************************************************************** -->	
+<!--																				-->
+<!--								page HWR										-->
+<!--																				-->
+<!-- ****************************************************************************** -->		
+
+<div data-role="page" id="hwr" data-theme="d" >
+	<div data-role="header">
+		<a href="#" data-rel="back" data-icon="arrow-l" data-transition="slide" data-direction="reverse" class="my_back_btn" ></a>
+		<p class="my_mobile_header">HWR</p>
+	</div>
+	<div data-role="content">
+     	<ul data-role="listview">
+ 	      	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Temperatur</div>	<div class="ui-block-b" style="text-align:center"><input type="text" style="text-align:center" readonly="readonly" class="my-input" id="temp110"></input></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Licht</div>	<div class="ui-block-b" style="text-align:center"><a href="#" 			id="lampe105" 	class="my_li_lampe"></a></div></div></li>
+ 	       	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 1</div>	<div class="ui-block-b" style="text-align:center"><a href="#" 	id="steckdose153" 	class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 2</div>	<div class="ui-block-b" style="text-align:center"><a href="#" 	id="steckdose154" 	class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 3</div>	<div class="ui-block-b" style="text-align:center"><a href="#" 	id="steckdose155" 	class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Steckdose 4</div>	<div class="ui-block-b" style="text-align:center"><a href="#" 	id="steckdose156" 	class="my_li_steck"></a></div></div></li>
+           	<li><div class="ui-grid-a"><div class="ui-block-a" style="text-align:center;  height:35px; margin-top:8px">Fenster</div><div class="ui-block-b" style="text-align:center"><a href="#" 			id="fenster112" 	class="my_li_fenster"></a></div></div></li>
+        </ul>
+   </div>
+</div> <!-- page: Startseite -->
+
+<!-- ****************************************************************************** -->	
+<!--																				-->
+<!--			Leerseite für nicht vorhandene IDs									-->
+<!--																				-->
+<!-- ****************************************************************************** -->		
+
+<div data-role="page" id="leer" data-theme="d" >
+	<div data-role="header">
+		<a href="#" data-rel="back" data-icon="arrow-l" data-transition="slide" data-direction="reverse" class="my_back_btn" ></a>
+		<h1 class="my_text" style="font-size:18px" data-inline="true">Bad</h1>
+	</div>
+	<div data-role="content">
+ 	<a href="#" id="steckdose120"></a>
+	<a href="#" id="lampe104"></a>
+	<a href="#" id="lampe106"></a>
+	<a href="#" id="lampe107"></a>
+	<a href="#" id="lampe108"></a>
+	<a href="#" id="fenster113"></a>
+	<a href="#" id="fenster114"></a>
+	<a href="#" id="temp111"></a>
+	<a href="#" id="temp112"></a>
+	<a href="#" id="temp113"></a>
+	<a href="#" id="temp211"></a>
+	<a href="#" id="temp212"></a>
+	<a href="#" id="temp213"></a>
+
+   </div>
+</div> <!-- page: Startseite -->
+
+
+ 
+</body>
+</html>
+
+</body>
+</html>

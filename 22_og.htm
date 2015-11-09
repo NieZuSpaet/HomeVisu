@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+	<title>Unser Haus</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- jQuery Mobile CSS bits -->
+<!--	<link rel="stylesheet" href="css/jquery.mobile-1.4.0-beta.1.css" />	-->
+	<link rel="stylesheet" href="css/jqm-1.4.0_custom_theme.css" /> 
+	<link rel="stylesheet" href="css/jquery.mobile.icons.min.css" /> 
+	<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" /> 
+	
+<!-- Javascript includes -->
+	<script src="tame.js" type="text/javascript"></script>
+	<script src="js/jquery.js"></script> 
+	<script> 	
+		$(document).bind("mobileinit", function()
+		{
+      		$.mobile.hashListeningEnabled = false;
+  		});
+	</script>	
+	<!--	<script src="js/jquery.mobile-1.4.0-beta.1.js"></script> -->
+	<script src="js/jquery.mobile-1.4.5.min.js"></script> 
+
+	<link rel="stylesheet" href="css/custom-1.4.0.css" /> 
+ 	<script src="js/20_xx.js" type="text/javascript"></script>
+	<script id="panel-init">
+		$(function() {
+			$( "body>[data-role='panel']" ).panel().enhanceWithin();;
+		});
+	</script>
+</head> 
+<div data-role="panel" id="panel_1" data-position="left" data-display="reveal" data-theme="d" class="my-class">
+		 	<ul data-role="listview" class="my-listview">
+				<li data-role="list-divider" class="my-listview-divider">Steuerung</li>
+				<li data-icon="false"><a href="index.htm" data-rel="external" data-ajax="false" data-transition="fade" 	>Übersicht</a></li>
+				<li data-icon="false"><a href="01_eg.htm" data-rel="external" data-ajax="false" data-transition="fade" 			>EG</a></li>
+				<li data-icon="false"><a href="02_og.htm" data-rel="external" data-ajax="false" data-transition="fade"			>OG</a></li>
+				<li data-icon="false"><a href="03_wetter.htm" data-rel="external" data-ajax="false" data-transition="fade"		>Wetter</a></li>
+				<li data-icon="false"><a href="05_wetterchart_highchart.htm" data-rel="external" data-ajax="false" data-transition="fade"	>Wetterchart</a></li>
+				<li data-icon="false"><a href="04_wind.htm"  data-rel="external" data-ajax="false" data-transition="fade"	>Windrose</a></li>
+				<li data-icon="false"><a href="06_wetterchart_amchart.htm"  data-rel="external" data-ajax="false" data-transition="fade"		>Wetterchart 2</a></li>
+				<li data-icon="false"><a href="07_video.htm" data-rel="external" data-ajax="false" data-transition="fade"		>Video</a></li>
+				<li data-icon="false"><a href="08_technik.htm" data-rel="external" data-ajax="false" data-transition="fade"		>Technik</a></li>
+				<li data-icon="false"><a href="09_technikchart.htm" data-rel="external" data-ajax="false" data-transition="fade"		>Technik (Chart)</a></li>
+				<li data-icon="false"><a href="10_technikchart_archiv.htm" data-rel="external" data-ajax="false" data-transition="fade"	>WP-Archiv</a></li>
+				<li data-role="list-divider" class="my-listview-divider">Setup</li>
+				<li data-icon="false"><a href="21_eg.htm" 				data-rel="external" data-ajax="false" 	data-transition="slide">EG</a></li>
+				<li data-icon="false"><a href="22_og.htm" 				data-rel="external" data-ajax="false" 	data-transition="slide" >OG</a></li>
+				<li data-icon="false"><a href="23_aussen.htm" 		data-rel="external" data-ajax="false" 	data-transition="slide" >Außen</a></li>
+				<li data-icon="false"><a href="24_timer.htm" 			data-rel="external" data-ajax="false" 	data-transition="fade">Timer</a></li>
+				<li data-icon="false"><a href="25_raffstore.htm" 	data-rel="external" data-ajax="false" 	data-transition="slide" >Raffstore Zeitsteuerung</a></li>
+				<li data-icon="false"><a href="26_lueftung.htm" 	data-rel="external" data-ajax="false" 	data-transition="slide" >Lüftung</a></li>
+				<li data-icon="false"><a href="31_sicherung.htm" 		data-rel="external" data-ajax="false" 	data-transition="slide" >Sicherung</a></li>
+			</ul>
+</div>
+<body onload="INIT()">
+	
+	
+<!-- ****************************************************************************** -->	
+<!--																				-->
+<!--								page OG-Setup									-->
+<!--																				-->
+<!-- ****************************************************************************** -->		
+<div data-role="page" id="setup_og" data-fullscreen="true" data-theme="d" class="my_raum_list">
+	<div data-role="header" data-position="fixed" >
+			<a href="#panel_1"  data-ajax="false" data-transition="slide" data-direction="reverse" class="my_text" > Navigation </a>
+	<h1 class="my_text" style="font-size:16px" data-inline="true">Setup Obergeschoss</h1>
+		<span id="systemtime" class="my_header" data-inline="true">No Time !!!</span>
+	</div>
+	<div data-role="content" >
+		<ul data-role="listview">
+           	<li class="my_li_tag_og_setup"></li>
+           		<a href="00_steckdose_og.htm?35" title="Raum 1 Steckdose 1"  data-rel="external"  data-ajax="false" data-transition="slide" id="steckdose135" class="my_li_steck_135"></a>
+           		<a href="00_steckdose_og.htm?36" title="Raum 1 Steckdose 2"  data-rel="external"  data-ajax="false" data-transition="slide" id="steckdose136" class="my_li_steck_136"></a>
+           		<a href="00_steckdose_og.htm?37" title="Raum 1 Steckdose 3"  data-rel="external"  data-ajax="false" data-transition="slide" id="steckdose137" class="my_li_steck_137"></a>
+           		<a href="00_steckdose_og.htm?38" title="Raum 1 Steckdose 4"  data-rel="external"  data-ajax="false" data-transition="slide" id="steckdose138" class="my_li_steck_138"></a>
+           		<a href="00_steckdose_og.htm?39" title="Raum 1 Steckdose 5"  data-rel="external"  data-ajax="false" data-transition="slide" id="steckdose139" class="my_li_steck_139"></a>
+           		<a href="00_steckdose_og.htm?40" title="Raum 1 Steckdose 6"  data-rel="external"  data-ajax="false" data-transition="slide" id="steckdose140" class="my_li_steck_140"></a>
+           		<a href="00_steckdose_og.htm?41" title="Raum 1 Steckdose 7"  data-rel="external"  data-ajax="false" data-transition="slide" id="steckdose141" class="my_li_steck_141"></a>
+           		<a href="00_steckdose_og.htm?42" title="Raum 1 Steckdose 8"  data-rel="external"  data-ajax="false" data-transition="slide" id="steckdose142" class="my_li_steck_142"></a>
+           		<a href="00_steckdose_og.htm?43" title="Raum 2 Steckdose 1"  data-rel="external"  data-ajax="false" data-transition="slide" id="steckdose143" class="my_li_steck_143"></a>
+           		<a href="00_steckdose_og.htm?44" title="Raum 2 Steckdose 2"  data-rel="external"  data-ajax="false" data-transition="slide" id="steckdose144" class="my_li_steck_144"></a>
+           		<a href="00_steckdose_og.htm?45" title="Raum 2 Steckdose 3"  data-rel="external"  data-ajax="false" data-transition="slide" id="steckdose145" class="my_li_steck_145"></a>
+           		<a href="00_steckdose_og.htm?46" title="Raum 2 Steckdose 4"  data-rel="external"  data-ajax="false" data-transition="slide" id="steckdose146" class="my_li_steck_146"></a>
+           		<a href="00_steckdose_og.htm?47" title="Raum 2 Steckdose 5"  data-rel="external"  data-ajax="false" data-transition="slide" id="steckdose147" class="my_li_steck_147"></a>
+           		<a href="00_steckdose_og.htm?48" title="Raum 2 Steckdose 6"  data-rel="external"  data-ajax="false" data-transition="slide" id="steckdose148" class="my_li_steck_148"></a>
+           		<a href="00_steckdose_og.htm?49" title="Raum 2 Steckdose 7"  data-rel="external"  data-ajax="false" data-transition="slide" id="steckdose149" class="my_li_steck_149"></a>
+           		<a href="00_steckdose_og.htm?50" title="Raum 3 Steckdose 1"  data-rel="external"  data-ajax="false" data-transition="slide" id="steckdose150" class="my_li_steck_150"></a>
+           		<a href="00_steckdose_og.htm?51" title="Raum 3 Steckdose 2"  data-rel="external"  data-ajax="false" data-transition="slide" id="steckdose151" class="my_li_steck_151"></a>
+           		<a href="00_steckdose_og.htm?52" title="Raum 3 Steckdose 3"  data-rel="external"  data-ajax="false" data-transition="slide" id="steckdose152" class="my_li_steck_152"></a>
+           		<a href="00_steckdose_og.htm?53" title="Raum 4 Steckdose 1"  data-rel="external"  data-ajax="false" data-transition="slide" id="steckdose153" class="my_li_steck_153"></a>
+           		<a href="00_steckdose_og.htm?54" title="Raum 4 Steckdose 2"  data-rel="external"  data-ajax="false" data-transition="slide" id="steckdose154" class="my_li_steck_154"></a>
+           		<a href="00_steckdose_og.htm?55" title="Raum 4 Steckdose 3"  data-rel="external"  data-ajax="false" data-transition="slide" id="steckdose155" class="my_li_steck_155"></a>
+           		<a href="00_steckdose_og.htm?56" title="Raum 4 Steckdose 4"  data-rel="external"  data-ajax="false" data-transition="slide" id="steckdose156" class="my_li_steck_156"></a>
+
+  
+               	<a href="00_lampe_og.htm?03" title="Raum 2 Lampe 1" data-rel="external"  data-ajax="false" data-transition="slide" id="lampe103" class="my_li_lampe_103"></a>
+            	<a href="00_lampe_og.htm?04" title="Raum 3 Lampe 1" data-rel="external"  data-ajax="false" data-transition="slide" id="lampe104" class="my_li_lampe_104"></a>
+            	<a href="00_lampe_og.htm?05" title="Raum 5 Lampe 1" data-rel="external"  data-ajax="false" data-transition="slide" id="lampe105" class="my_li_lampe_105"></a>
+            	
+            	<a href="00_dimmer_og.htm?02" title="Raum 1 Dimmer 2" data-rel="external"  data-ajax="false" data-transition="slide" id="dimmer112" class="my_li_dimm_102"></a>
+               	<a href="00_dimmer_og.htm?08" title="Raum 2 Dimmer 1" data-rel="external"  data-ajax="false" data-transition="slide" id="dimmer108" class="my_li_dimm_108"></a>
+            	<a href="00_dimmer_og.htm?09" title="Raum 2 Dimmer 2" data-rel="external"  data-ajax="false" data-transition="slide" id="dimmer109" class="my_li_dimm_109"></a>
+            	<a href="00_dimmer_og.htm?10" title="Raum 3 Dimmer 1" data-rel="external"  data-ajax="false" data-transition="slide" id="dimmer110" class="my_li_dimm_110"></a>
+            	<a href="00_dimmer_og.htm?11" title="Raum 4 Dimmer 1" data-rel="external"  data-ajax="false" data-transition="slide" id="dimmer111" class="my_li_dimm_111"></a>
+     		 		
+       	        <a href="00_raffstore_og.htm?06" title="Raffstore 1" data-rel="external"  data-ajax="false" id="raffstore106" class="my_li_raffstore_106"></a>
+        	 	<a href="00_raffstore_og.htm?07" title="Raffstore 2" data-rel="external"  data-ajax="false" id="raffstore107" class="my_li_raffstore_107"></a>
+         		<a href="00_raffstore_og.htm?08" title="Raffstore 3" data-rel="external"  data-ajax="false" id="raffstore108" class="my_li_raffstore_108"></a>
+         		<a href="00_raffstore_og.htm?09" title="Raffstore 4" data-rel="external"  data-ajax="false" id="raffstore109" class="my_li_raffstore_109"></a>
+         		<a href="00_raffstore_og.htm?10" title="Raffstore 5" data-rel="external"  data-ajax="false" id="raffstore110" class="my_li_raffstore_110"></a>
+         		<a href="00_raffstore_og.htm?11" title="Raffstore 6" data-rel="external"  data-ajax="false" id="raffstore111" class="my_li_raffstore_111"></a>
+         		<a href="00_raffstore_og.htm?12" title="Raffstore 7" data-rel="external"  data-ajax="false" id="raffstore112" class="my_li_raffstore_112"></a>
+         		
+         		<a href="#" title="Raffstore 1" id="raffstore206" class="my_li_raffstore_206 dark"></a>
+        	 	<a href="#" title="Raffstore 2" id="raffstore207" class="my_li_raffstore_207 dark"></a>
+         		<a href="#" title="Raffstore 3" id="raffstore208" class="my_li_raffstore_208 dark"></a>
+         		<a href="#" title="Raffstore 4" id="raffstore209" class="my_li_raffstore_209 dark"></a>
+         		<a href="#" title="Raffstore 5" id="raffstore210" class="my_li_raffstore_210 dark"></a>
+         		<a href="#" title="Raffstore 6" id="raffstore211" class="my_li_raffstore_211 dark"></a>
+         		<a href="#" title="Raffstore 7" id="raffstore212" class="my_li_raffstore_212 dark"></a>
+  
+  	     		<a href="#" title="Fenster" id="fenster108" class="my_li_fenster_108 green"></a>
+         		<a href="#" title="Fenster" id="fenster109" class="my_li_fenster_109 green"></a>
+         		<a href="#" title="Fenster" id="fenster110" class="my_li_fenster_110 green"></a>
+         		<a href="#" title="Fenster" id="fenster111" class="my_li_fenster_111 green"></a>
+         		<a href="#" title="Fenster" id="fenster112" class="my_li_fenster_112 green"></a>
+        
+               	<a href="#" title="Rauchmelder 4" id="rauchmelder105" class="my_li_rauchmelder_105"></a>
+        	 	<a href="#" title="Rauchmelder 5" id="rauchmelder106" class="my_li_rauchmelder_106"></a>
+        	 	<a href="#" title="Rauchmelder 6" id="rauchmelder107" class="my_li_rauchmelder_107"></a>
+	
+               	<a href="#" title="Lichttaster ID 13"  data-transition="slide" class="my_li_schalter_113"></a>
+            	<a href="#" title="Lichttaster ID 14"  data-transition="slide" class="my_li_schalter_114"></a>
+            	<a href="#" title="Lichttaster ID 15"  data-transition="slide" class="my_li_schalter_115"></a>
+            	<a href="#" title="Lichttaster ID 16"  data-transition="slide" class="my_li_schalter_116"></a>
+            	<a href="#" title="Lichttaster ID 17"  data-transition="slide" class="my_li_schalter_117"></a>
+            	<a href="#" title="Lichttaster ID 18"  data-transition="slide" class="my_li_schalter_118"></a>
+            	<a href="#" title="Lichttaster ID 19"  data-transition="slide" class="my_li_schalter_119"></a>
+            	<a href="#" title="Lichttaster ID 20"  data-transition="slide" class="my_li_schalter_120"></a>
+            
+		</ul> 
+	</div> <!-- data-role="content" -->		
+	<div data-role="footer" data-position="fixed">
+	
+	</div><!-- /footer -->
+</div> <!-- page:  -->
+
+
+</body>
+</html>

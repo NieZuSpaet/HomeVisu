@@ -1,0 +1,373 @@
+
+.my_back_btn{padding-top:23px;}
+.my_text{text-shadow: none;	font-family: Arial, Helvetica, sans-serif;	font-variant: small-caps; letter-spacing:0.1em;	}
+.my_header{	float: right; 				position: absolute;	 left:100%; margin-left:-310px; top:12px; font-family: Arial, Helvetica, sans-serif;	font-size:16px; font-variant: small-caps; letter-spacing:0.1em;}
+.my_loader{	float: left; width:100%;	position: relative;	height: 80px; text-align: center;	font-size: 16px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif; letter-spacing: 0.1em;	font-variant: small-caps;}
+
+.my-class .my-listview {}	
+.my-class .my-listview-divider{ font-size:18px; text-align: center;}	
+.my_raum_list .popup_steckdose{ float: right; 	position: absolute;	top:-90px; margin-left: -25px; padding:8px;} 
+
+.class_popup_dimmer_eg{ } 
+.class_popup_dimmer_og{ } 
+.class_popup_raffstore{  width:335px; 		} 
+.class_popup_raffstore_eg{  width:335px; 		} 
+.class_popup_raffstore_og{  width:335px; 		} 
+.class_popup_test{ float: right; 	position: absolute;	top:90px; margin-left: -25px; padding:8px;} 
+
+.red 	{background-color: 	#C60D0D;	color: 	#C60D0D;} 
+.green 	{background-color: 	green; 		color: 	green;} 
+.yellow {background-color: 	yellow;		color: 	yellow;} 
+.dark 	{background-color:	black;		color: 	black;} 
+
+.my_raum_list .my_li_tag_uebersicht		{float: right; 	position: absolute;	left:48%; 	top:13px;	margin-left: -483px; 	width:966px;	height:670px;	background-image: url(../images/gesamt.gif); background-repeat: none;	background-color: #444;}
+.my_raum_list .my_li_tag_eg 		{float: right; 	position: absolute;	left:50%; 	top:13px;	margin-left: -289px; 	width:577px;	height:670px;	background-image: url(../images/eg_kl.gif); background-repeat: none;	background-color: #444;}
+.my_raum_list .my_li_tag_eg_setup	{float: right; 	position: absolute;	left:50%; 	top:13px;	margin-left: -289px; 	width:577px;	height:670px;	background-image: url(../images/eg_setup_kl.gif); background-repeat: none;	background-color: #444;}
+.my_raum_list .my_li_tag_og 		{float: right; 	position: absolute;	left:50%; 	top:13px;	margin-left: -289px; 	width:577px;	height:680px;	background-image: url(../images/og_kl.gif); background-repeat: none;	background-color: #444;}
+.my_raum_list .my_li_tag_og_setup 	{float: right; 	position: absolute;	left:50%; 	top:13px;	margin-left: -289px; 	width:577px;	height:680px;	background-image: url(../images/og_setup_kl.gif); background-repeat: none;	background-color: #444;}
+.my_raum_list .my_li_tag_aussen_setup 	{float: right; 	position: absolute;	left:50%; 	top:13px;	margin-left: -263px; 	width:526px;	height:680px;	background-image: url(../images/aussen.gif); background-repeat: none;	background-color: #444;}
+.my_raum_list .my_li_tag_tec 		{float: right; 	position: absolute;	left:50%; 	top:13px;	margin-left: -289px; 	width:577px;	height:284px;	background-image: url(../images/technik.gif); background-repeat: none;	background-color: #444;}
+.my_raum_list .my_li_tag_lftg 		{float: right; 	position: absolute;	left:50%; 	top:335px;	margin-left: -289px; 	width:577px;	height:284px;	background-image: url(../images/lueftung.gif); background-repeat: none;	background-color: #444;}
+/* EG ICONs */
+.my_li_raffstore_101 {float: right; 	position: absolute;	left:50%; 	top:650px;	margin-left: 70px; 		width: 25px;	height: 25px;	background-image: url(../images/raffstore_kl.gif);}
+.my_li_raffstore_102 {float: right; 	position: absolute;	left:50%; 	top:650px;	margin-left: -146px; 	width: 25px;	height: 25px;	background-image: url(../images/raffstore_kl.gif);}
+.my_li_raffstore_103 {float: right; 	position: absolute;	left:50%; 	top:577px;	margin-left: -287px; 	width: 25px;	height: 25px;	background-image: url(../images/raffstore_kl.gif);}
+.my_li_raffstore_104 {float: right; 	position: absolute;	left:50%; 	top:338px;	margin-left: -287px; 	width: 25px;	height: 25px;	background-image: url(../images/raffstore_kl.gif);}
+.my_li_raffstore_105 {float: right; 	position: absolute;	left:50%; 	top:127px;	margin-left: -287px; 	width: 25px;	height: 25px;	background-image: url(../images/raffstore_kl.gif);}
+/* OG ICONs*/ 
+.my_li_raffstore_106 {float: right; 	position: absolute;	left:50%; 	top:686px;	margin-left: 50px; 		width: 25px;	height: 25px;	background-image: url(../images/raffstore_kl.gif);}
+.my_li_raffstore_107 {float: right; 	position: absolute;	left:50%; 	top:686px;	margin-left: -21px; 	width: 25px;	height: 25px;	background-image: url(../images/raffstore_kl.gif);}
+.my_li_raffstore_108 {float: right; 	position: absolute;	left:50%; 	top:686px;	margin-left: -112px; 	width: 25px;	height: 25px;	background-image: url(../images/raffstore_kl.gif);}
+.my_li_raffstore_109 {float: right; 	position: absolute;	left:50%; 	top:577px;	margin-left: -287px; 	width: 25px;	height: 25px;	background-image: url(../images/raffstore_kl.gif);}
+.my_li_raffstore_110 {float: right; 	position: absolute;	left:50%; 	top:338px;	margin-left: -287px; 	width: 25px;	height: 25px;	background-image: url(../images/raffstore_kl.gif);}
+.my_li_raffstore_111 {float: right; 	position: absolute;	left:50%; 	top:237px;	margin-left: -287px; 	width: 25px;	height: 25px;	background-image: url(../images/raffstore_kl.gif);}
+.my_li_raffstore_112 {float: right; 	position: absolute;	left:50%; 	top:17px;	margin-left: -62px; 	width: 25px;	height: 25px;	background-image: url(../images/raffstore_kl.gif);}
+/* EG VERSCHATTUNG */
+.my_li_raffstore_201 {float: right; 	position: absolute;	left:50%; 	top:632px;	margin-left: 70px; 		width: 65px;	height: 13px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_raffstore_202 {float: right; 	position: absolute;	left:50%; 	top:632px;	margin-left: -257px; 	width: 136px;	height: 13px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_raffstore_203 {float: right; 	position: absolute;	left:50%; 	top:576px;	margin-left: -257px; 	width: 12px;	height: 69px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_raffstore_204 {float: right; 	position: absolute;	left:50%; 	top:337px;	margin-left: -257px; 	width: 12px;	height: 49px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_raffstore_205 {float: right; 	position: absolute;	left:50%; 	top:126px;	margin-left: -257px; 	width: 12px;	height: 144px;	background-image: url(../images/pixel_kl.gif);}
+/* OG VERSCHATTUNG */
+.my_li_raffstore_206 {float: right; 	position: absolute;	left:50%; 	top:669px;	margin-left: 48px; 		width: 47px;	height: 13px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_raffstore_207 {float: right; 	position: absolute;	left:50%; 	top:669px;	margin-left: -21px; 	width: 47px;	height: 13px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_raffstore_208 {float: right; 	position: absolute;	left:50%; 	top:669px;	margin-left: -257px; 	width: 170px;	height: 13px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_raffstore_209 {float: right; 	position: absolute;	left:50%; 	top:577px;	margin-left: -257px; 	width: 12px;	height: 105px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_raffstore_210 {float: right; 	position: absolute;	left:50%; 	top:337px;	margin-left: -257px; 	width: 12px;	height: 49px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_raffstore_211 {float: right; 	position: absolute;	left:50%; 	top:236px;	margin-left: -257px; 	width: 12px;	height: 49px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_raffstore_212 {float: right; 	position: absolute;	left:50%; 	top:46px;	margin-left: -170px; 	width: 134px;	height: 13px;	background-image: url(../images/pixel_kl.gif);}
+/* Übersicht VERSCHATTUNG */
+.my_li_raffstore_301 {float: right; 	position: absolute;	left:48%; 	top:591px;	margin-left: -236px; 	width: 45px;	height: 9px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_raffstore_302 {float: right; 	position: absolute;	left:48%; 	top:591px;	margin-left: -465px; 	width: 95px;	height: 9px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_raffstore_303 {float: right; 	position: absolute;	left:48%; 	top:552px;	margin-left: -465px; 	width: 8px;	height: 39px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_raffstore_304 {float: right; 	position: absolute;	left:48%; 	top:384px;	margin-left: -465px; 	width: 8px;	height: 35px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_raffstore_305 {float: right; 	position: absolute;	left:48%; 	top:237px;	margin-left: -465px; 	width: 8px;	height: 101px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_raffstore_306 {float: right; 	position: absolute;	left:48%; 	top:616px;	margin-left: 325px; 	width: 33px;	height: 9px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_raffstore_307 {float: right; 	position: absolute;	left:48%; 	top:616px;	margin-left: 277px; 	width: 33px;	height: 9px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_raffstore_308 {float: right; 	position: absolute;	left:48%; 	top:616px;	margin-left: 112px; 	width: 118px;	height: 9px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_raffstore_309 {float: right; 	position: absolute;	left:48%; 	top:552px;	margin-left: 111px; 	width: 9px;	height: 64px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_raffstore_310 {float: right; 	position: absolute;	left:48%; 	top:384px;	margin-left: 111px; 	width: 9px;	height: 34px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_raffstore_311 {float: right; 	position: absolute;	left:48%; 	top:314px;	margin-left: 111px; 	width: 9px;	height: 33px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_raffstore_312 {float: right; 	position: absolute;	left:48%; 	top:180px;	margin-left: 172px; 	width: 94px;	height: 9px;	background-image: url(../images/pixel_kl.gif);}
+/* EG */
+.my_li_fenster_101 {float: right; 		position: absolute;	left:50%; 	top:555px;	margin-left: 154px; 	width: 4px;		height: 61px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_fenster_102 {float: right; 		position: absolute;	left:50%; 	top:576px;	margin-left: -243px; 	width: 13px;	height: 54px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_fenster_103 {float: right; 		position: absolute;	left:50%; 	top:221px;	margin-left: -243px; 	width: 13px;	height: 49px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_fenster_104 {float: right; 		position: absolute;	left:50%; 	top:60px;	margin-left: -36px; 	width: 51px;	height: 13px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_fenster_105 {float: right; 		position: absolute;	left:50%; 	top:60px;	margin-left: 15px; 		width: 51px;	height: 13px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_fenster_106 {float: right; 		position: absolute;	left:50%; 	top:60px;	margin-left: 221px; 	width: 50px;	height: 13px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_fenster_107 {float: right; 		position: absolute;	left:50%; 	top:438px;	margin-left: 259px; 	width: 12px;	height: 33px;	background-image: url(../images/pixel_kl.gif);}
+/* OG */
+.my_li_fenster_108 {float: right; 		position: absolute;	left:50%; 	top:655px;	margin-left: -133px; 	width: 46px;	height: 12px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_fenster_109 {float: right; 		position: absolute;	left:50%; 	top:236px;	margin-left: -243px; 	width: 13px;	height: 49px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_fenster_110 {float: right; 		position: absolute;	left:50%; 	top:60px;	margin-left: 221px; 	width: 50px;	height: 13px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_fenster_111 {float: right; 		position: absolute;	left:50%; 	top:235px;	margin-left: 259px; 	width: 12px;	height: 49px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_fenster_112 {float: right; 		position: absolute;	left:50%; 	top:520px;	margin-left: 220px; 	width: 66px;	height: 13px;	background-image: url(../images/pixel_kl.gif);}
+/* Übersicht */
+.my_li_fenster_301 {float: right; 		position: absolute;	left:48%; 	top:537px;	margin-left: -177px; 	width: 3px;		height: 43px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_fenster_302 {float: right; 		position: absolute;	left:48%; 	top:552px;	margin-left: -455px; 	width: 9px;		height: 38px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_fenster_303 {float: right; 		position: absolute;	left:48%; 	top:298px;	margin-left: -455px; 	width: 9px;		height: 40px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_fenster_304 {float: right; 		position: absolute;	left:48%; 	top:191px;	margin-left: -310px; 	width: 35px;	height: 9px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_fenster_305 {float: right; 		position: absolute;	left:48%; 	top:191px;	margin-left: -275px; 	width: 36px;	height: 9px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_fenster_306 {float: right; 		position: absolute;	left:48%; 	top:191px;	margin-left: -130px; 	width: 35px;	height: 9px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_fenster_307 {float: right; 		position: absolute;	left:48%; 	top:455px;	margin-left: -104px; 	width: 9px;	height: 23px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_fenster_308 {float: right; 		position: absolute;	left:48%; 	top:607px;	margin-left: 195px; 	width: 35px;	height: 8px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_fenster_309 {float: right; 		position: absolute;	left:48%; 	top:314px;	margin-left: 121px; 	width: 9px;	height: 33px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_fenster_310 {float: right; 		position: absolute;	left:48%; 	top:190px;	margin-left: 446px; 	width: 35px;	height: 9px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_fenster_311 {float: right; 		position: absolute;	left:48%; 	top:313px;	margin-left: 473px; 	width: 8px;	height: 34px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_fenster_312 {float: right; 		position: absolute;	left:48%; 	top:502px;	margin-left: 445px; 	width: 36px;	height: 9px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_fenster_313 {float: right; 		position: absolute;	left:48%; 	top:139px;	margin-left: -66px; 	width: 32px;	height: 4px;	background-image: url(../images/pixel_kl.gif);}
+.my_li_fenster_314 {float: right; 		position: absolute;	left:48%; 	top:82px;	margin-left: -181px; 	width: 4px;	height: 52px;	background-image: url(../images/pixel_kl.gif);}
+/* EG */
+.my_li_schalter_101 {float: right; 	position: absolute;	left:50%; 	top:530px;	margin-left: 109px; 	width: 25px;	height: 25px;	background-image: url(../images/schalter_kl.gif);}
+.my_li_schalter_102 {float: right; 	position: absolute;	left:50%; 	top:452px;	margin-left: 10px; 		width: 25px;	height: 25px;	background-image: url(../images/schalter_kl.gif);}
+.my_li_schalter_103 {float: right; 	position: absolute;	left:50%; 	top:320px;	margin-left: 109px; 	width: 25px;	height: 25px;	background-image: url(../images/schalter_kl.gif);}
+.my_li_schalter_104 {float: right; 	position: absolute;	left:50%; 	top:460px;	margin-left: 109px; 	width: 25px;	height: 25px;	background-image: url(../images/schalter_kl.gif);}
+.my_li_schalter_105 {float: right; 	position: absolute;	left:50%; 	top:411px;	margin-left: -150px;	width: 25px;	height: 25px;	background-image: url(../images/schalter_kl.gif);}
+.my_li_schalter_106 {float: right; 	position: absolute;	left:50%; 	top:536px;	margin-left: -44px; 	width: 25px;	height: 25px;	background-image: url(../images/schalter_kl.gif);}
+.my_li_schalter_107 {float: right; 	position: absolute;	left:50%; 	top:102px;	margin-left: -63px; 	width: 25px;	height: 25px;	background-image: url(../images/schalter_kl.gif);}
+.my_li_schalter_108 {float: right; 	position: absolute;	left:50%; 	top:78px;	margin-left: 70px; 	width: 25px;	height: 25px;	background-image: url(../images/schalter_kl.gif);}
+.my_li_schalter_109 {float: right; 	position: absolute;	left:50%; 	top:272px;	margin-left: 109px; 	width: 25px;	height: 25px;	background-image: url(../images/schalter_kl.gif);}
+.my_li_schalter_110 {float: right; 	position: absolute;	left:50%; 	top:78px;	margin-left: 183px; 	width: 25px;	height: 25px;	background-image: url(../images/schalter_kl.gif);}
+.my_li_schalter_111 {float: right; 	position: absolute;	left:50%; 	top:272px;	margin-left: 85px; 	width: 25px;	height: 25px;	background-image: url(../images/schalter_kl.gif);}
+.my_li_schalter_112 {float: right; 	position: absolute;	left:50%; 	top:476px;	margin-left: 158px; 	width: 25px;	height: 25px;	background-image: url(../images/schalter_kl.gif);}
+/* OG */  
+.my_li_schalter_113 {float: right; 	position: absolute;	left:50%; 	top:334px;	margin-left: -178px; 	width: 25px;	height: 25px;	background-image: url(../images/schalter_kl.gif);}
+.my_li_schalter_114 {float: right; 	position: absolute;	left:50%; 	top:102px;	margin-left: -202px; 	width: 25px;	height: 25px;	background-image: url(../images/schalter_kl.gif);}
+.my_li_schalter_115 {float: right; 	position: absolute;	left:50%; 	top:102px;	margin-left: -33px; 	width: 25px;	height: 25px;	background-image: url(../images/schalter_kl.gif);}
+.my_li_schalter_116 {float: right; 	position: absolute;	left:50%; 	top:296px;	margin-left: -178px; 	width: 25px;	height: 25px;	background-image: url(../images/schalter_kl.gif);}
+.my_li_schalter_117 {float: right; 	position: absolute;	left:50%; 	top:78px;	margin-left: 154px; 	width: 25px;	height: 25px;	background-image: url(../images/schalter_kl.gif);}
+.my_li_schalter_118 {float: right; 	position: absolute;	left:50%; 	top:238px;	margin-left: 150px; 	width: 25px;	height: 25px;	background-image: url(../images/schalter_kl.gif);}
+.my_li_schalter_119 {float: right;	position: absolute;	left:50%;	top:238px;	margin-left: 54px;		width: 25px;	height: 25px;	background-image: url(../images/schalter_kl.gif);}
+.my_li_schalter_120 {float: right; 	position: absolute;	left:50%; 	top:432px;	margin-left: 78px; 	width: 25px;	height: 25px;	background-image: url(../images/schalter_kl.gif);}
+/* EG */
+.my_li_dimm_101 {float: right; 		position: absolute;	left:50%; 	top:535px;	margin-left: 58px; 		width: 25px;	height: 25px;	background-image: url(../images/dimmer_kl.gif);}
+.my_li_dimm_102 {float: right; 		position: absolute;	left:50%; 	top:348px;	margin-left: 25px; 		width: 25px;	height: 25px;	background-image: url(../images/dimmer_kl.gif);}
+.my_li_dimm_103 {float: right; 		position: absolute;	left:50%; 	top:290px;	margin-left: 25px; 		width: 25px;	height: 25px;	background-image: url(../images/dimmer_kl.gif);}
+.my_li_dimm_104 {float: right; 		position: absolute;	left:50%; 	top:290px;	margin-left: -225px; 	width: 25px;	height: 25px;	background-image: url(../images/dimmer_kl.gif);}
+.my_li_dimm_105 {float: right; 		position: absolute;	left:50%; 	top:176px;	margin-left: 140px; 	width: 25px;	height: 25px;	background-image: url(../images/dimmer_kl.gif);}
+.my_li_dimm_106 {float: right; 		position: absolute;	left:50%; 	top:152px;	margin-left: 140px; 	width: 25px;	height: 25px;	background-image: url(../images/dimmer_kl.gif);}
+.my_li_dimm_107 {float: right; 		position: absolute;	left:50%; 	top:152px;	margin-left: 230px; 	width: 25px;	height: 25px;	background-image: url(../images/dimmer_kl.gif);}
+/* OG */
+.my_li_dimm_108 {float: right; 		position: absolute;	left:50%; 	top:140px;	margin-left: 100px; 	width: 25px;	height: 25px;	background-image: url(../images/dimmer_kl.gif);}
+.my_li_dimm_109 {float: right; 		position: absolute;	left:50%; 	top:268px;	margin-left: 100px; 	width: 25px;	height: 25px;	background-image: url(../images/dimmer_kl.gif);}
+.my_li_dimm_110 {float: right; 		position: absolute;	left:50%; 	top:78px;	margin-left: -226px; 	width: 25px;	height: 25px;	background-image: url(../images/dimmer_kl.gif);}
+.my_li_dimm_111 {float: right; 		position: absolute;	left:50%; 	top:78px;	margin-left: -9px; 	width: 25px;	height: 25px;	background-image: url(../images/dimmer_kl.gif);}
+/* EG */
+.my_li_lampe_101 {float: right;	 	position: absolute;	left:50%; 	top:335px;	margin-left: 200px; 	width: 25px;	height: 25px;	background-image: url(../images/lampe_kl.gif);}
+.my_li_lampe_102 {float: right; 	position: absolute;	left:50%; 	top:476px;	margin-left: 182px; 	width: 25px;	height: 25px;	background-image: url(../images/lampe_kl.gif);}
+
+/* OG */
+.my_li_lampe_103 {float: right; 		position: absolute;	left:50%; 	top:150px;	margin-left: -120px; 	width: 25px;	height: 25px;	background-image: url(../images/lampe_kl.gif);}
+/*.my_li_lampe_104 {float: right; 		position: absolute;	left:50%; 	top:118px;	margin-left: 130px; 	width: 25px;	height: 25px;	background-image: url(../images/lampe_kl.gif);}*/
+.my_li_lampe_105 {float: right; 		position: absolute;	left:50%; 	top:404px;	margin-left: 150px; 	width: 25px;	height: 25px;	background-image: url(../images/lampe_kl.gif);}
+/* Aussen */
+.my_li_lampe_106 {float: right; 	position: absolute;	left:50%; 	top:-570px;	margin-left: 210px; 	width: 25px;	height: 25px;	background-image: url(../images/lampe_kl.gif);}
+.my_li_lampe_107 {float: right; 	position: absolute;	left:50%; 	top:570px;	margin-left: 210px; 	width: 25px;	height: 25px;	background-image: url(../images/lampe_kl.gif);}
+.my_li_lampe_108 {float: right; 	position: absolute;	left:50%; 	top:-570px;	margin-left: 210px; 	width: 25px;	height: 25px;	background-image: url(../images/lampe_kl.gif);}
+
+/* Übersicht */
+.my_li_lampe_306 {float: right; 		position: absolute;	left:48%; 	top:82px;	margin-left: -75px; 	width: 25px;	height: 25px;	background-image: url(../images/lampe_kl.gif);}
+.my_li_lampe_307 {float: right; 		position: absolute;	left:48%; 	top:490px;	margin-left: -25px; 	width: 25px;	height: 25px;	background-image: url(../images/lampe_kl.gif);}
+.my_li_lampe_308 {float: right; 		position: absolute;	left:48%; 	top:630px;	margin-left: -150px; 	width: 25px;	height: 25px;	background-image: url(../images/lampe_kl.gif);}
+/* Setup Außen */
+.my_li_lampe_406 {float: right; 		position: absolute;	left:48%; 	top:82px;	margin-left: 150px; 	width: 25px;	height: 25px;	background-image: url(../images/lampe_kl.gif);}
+.my_li_lampe_407 {float: right; 		position: absolute;	left:48%; 	top:490px;	margin-left: 225px; 	width: 25px;	height: 25px;	background-image: url(../images/lampe_kl.gif);}
+.my_li_lampe_408 {float: right; 		position: absolute;	left:48%; 	top:630px;	margin-left: 100px; 	width: 25px;	height: 25px;	background-image: url(../images/lampe_kl.gif);}
+
+/* EG */
+.my_li_steck_101 {float: right;		position: absolute;	left:50%;	top:590px;	margin-left: 44px;		width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+.my_li_steck_102 {float: right;		position: absolute;	left:50%;	top:590px;	margin-left: -7px;		width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+.my_li_steck_103 {float: right;		position: absolute;	left:50%;	top:506px;	margin-left: 109px;		width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+.my_li_steck_104 {float: right;		position: absolute;	left:50%;	top:393px;	margin-left: 10px;	width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+.my_li_steck_105 {float: right;		position: absolute;	left:50%;	top:417px;	margin-left: 10px;	width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+
+.my_li_steck_106 {float: right;		position: absolute;	left:50%;	top:566px;	margin-left: -44px;		width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+.my_li_steck_107 {float: right;		position: absolute;	left:50%;	top:590px;	margin-left: -44px;		width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+.my_li_steck_108 {float: right;		position: absolute;	left:50%;	top:552px;	margin-left: -225px;	width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+.my_li_steck_109 {float: right;		position: absolute;	left:50%;	top:528px;	margin-left: -225px;	width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+.my_li_steck_110 {float: right;		position: absolute;	left:50%;	top:411px;	margin-left: -51px;		width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+.my_li_steck_111 {float: right;		position: absolute;	left:50%;	top:411px;	margin-left: -27px;		width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+.my_li_steck_112 {float: right;		position: absolute;	left:50%;	top:364px;	margin-left: -85px;	width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+.my_li_steck_113 {float: right;		position: absolute;	left:50%;	top:364px;	margin-left: -109px;	width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+.my_li_steck_114 {float: right;		position: absolute;	left:50%;	top:78px;	margin-left: -225px;	width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+.my_li_steck_115 {float: right;		position: absolute;	left:50%;	top:78px;	margin-left: -201px;	width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+.my_li_steck_116 {float: right;		position: absolute;	left:50%;	top:78px;	margin-left: -87px;	width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+.my_li_steck_117 {float: right;		position: absolute;	left:50%;	top:78px;	margin-left: -63px;	width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+
+.my_li_steck_127 {float: right;	 	position: absolute;	left:50%; 	top:296px;	margin-left: 109px; 	width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); }
+.my_li_steck_118 {float: right; 		position: absolute;	left:50%; 	top:176px;	margin-left: 164px; 	width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); }
+.my_li_steck_119 {float: right; 		position: absolute; left:50%; 	top:78px;	margin-left: 230px; 	width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+.my_li_steck_120 {float: right; 		position: absolute;	left:50%; 	top:142px;	margin-left: 330px; 	width: 25px;	height: 25px;	 }
+.my_li_steck_121 {float: right; 		position: absolute; left:50%; 	top:220px; 	margin-left: 230px; 	width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); }
+.my_li_steck_122 {float: right; 		position: absolute; left:50%; 	top:244px;	margin-left: 230px; 	width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); }
+.my_li_steck_123 {float: right; 		position: absolute; left:50%; 	top:283px;	margin-left: 230px; 	width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); }
+.my_li_steck_124 {float: right; 		position: absolute; left:50%; 	top:283px;	margin-left: 206px; 	width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); }
+.my_li_steck_125 {float: right; 		position: absolute;	left:50%; 	top:283px;	margin-left: 169px; 	width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); }
+.my_li_steck_126 {float: right; 		position: absolute;	left:50%; 	top:283px;	margin-left: 145px; 	width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); }
+.my_li_steck_128 {float: right; 		position: absolute;	left:50%; 	top:176px;	margin-left: 230px; 	width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); }
+
+.my_li_steck_129 {float: right; 		position: absolute;	left:50%; 	top:319px;	margin-left: 145px; 	width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); }
+.my_li_steck_130 {float: right; 		position: absolute;	left:50%; 	top:319px;	margin-left: 169px; 	width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); }
+.my_li_steck_131 {float: right; 		position: absolute;	left:50%; 	top:327px;	margin-left: 230px; 	width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); }
+.my_li_steck_132 {float: right; 		position: absolute;	left:50%; 	top:351px;	margin-left: 230px; 	width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); }
+.my_li_steck_133 {float: right; 		position: absolute; left:50%; 	top:476px;	margin-left: 230px; 	width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); }
+.my_li_steck_134 {float: right; 		position: absolute; left:50%; 	top:476px;	margin-left: 206px; 	width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); }
+/* OG */
+.my_li_steck_135 {float: right;		position: absolute;	left:50%;	top:403px;	margin-left: -26px;	width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+.my_li_steck_136 {float: right;		position: absolute;	left:50%;	top:403px;	margin-left: -50px;	width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+.my_li_steck_137 {float: right;		position: absolute;	left:50%;	top:602px;	margin-left: 107px;		width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+.my_li_steck_138 {float: right;		position: absolute;	left:50%;	top:626px;	margin-left: 107px;		width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+.my_li_steck_139 {float: right;		position: absolute;	left:50%;	top:626px;	margin-left: -201px;	width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+.my_li_steck_140 {float: right;		position: absolute;	left:50%;	top:626px;	margin-left: -225px;	width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+.my_li_steck_141 {float: right;		position: absolute;	left:50%;	top:78px;	margin-left: -202px;	width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+.my_li_steck_142 {float: right;		position: absolute;	left:50%;	top:78px;	margin-left: -33px;		width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+.my_li_steck_143 {float: right;		position: absolute;	left:50%;	top:296px;	margin-left: -8px;		width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+.my_li_steck_144 {float: right;		position: absolute;	left:50%;	top:296px;	margin-left: -32px;		width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+.my_li_steck_145 {float: right;		position: absolute;	left:50%;	top:296px;	margin-left: -154px;	width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+.my_li_steck_146 {float: right;		position: absolute;	left:50%;	top:78px;	margin-left: 92px;		width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+.my_li_steck_147 {float: right;		position: absolute;	left:50%;	top:78px;	margin-left: 116px;		width: 25px;	height: 25px;	background-image: url(../images/lampe_kl.gif); } 
+.my_li_steck_148 {float: right;		position: absolute;	left:50%;	top:200px;	margin-left: 150px;		width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+.my_li_steck_149 {float: right; 	position: absolute;	left:50%; 	top:238px;	margin-left: 30px;		width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif);}  
+.my_li_steck_150 {float: right;		position: absolute;	left:50%;	top:296px;	margin-left: 30px;		width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+.my_li_steck_151 {float: right;		position: absolute;	left:50%;	top:238px;	margin-left: 230px;		width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+.my_li_steck_152 {float: right;		position: absolute;	left:50%;	top:296px;	margin-left: 230px;		width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+.my_li_steck_153 {float: right;		position: absolute;	left:50%;	top:476px;	margin-left: 159px;		width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+.my_li_steck_154 {float: right;		position: absolute;	left:50%;	top:476px;	margin-left: 135px;		width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+.my_li_steck_156 {float: right;		position: absolute;	left:50%;	top:476px;	margin-left: 230px;		width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+.my_li_steck_155 {float: right;		position: absolute;	left:50%;	top:476px;	margin-left: 194px;		width: 25px;	height: 25px;	background-image: url(../images/steckdose_kl.gif); } 
+/* EG */
+.my_li_rauchmelder_101 {float: right; 	position: absolute;	left:50%; 	top:390px;	margin-left: 92px; 	width: 25px;	height: 25px;	background-image: url(../images/rauchmelder_kl.gif);}
+.my_li_rauchmelder_102 {float: right; 	position: absolute;	left:50%; 	top:490px;	margin-left: -130px; 	width: 25px;	height: 25px;	background-image: url(../images/rauchmelder_kl.gif);}
+.my_li_rauchmelder_103 {float: right; 	position: absolute;	left:50%; 	top:152px;	margin-left: -130px; 	width: 25px;	height: 25px;	background-image: url(../images/rauchmelder_kl.gif);}
+.my_li_rauchmelder_104 {float: right; 	position: absolute;	left:50%; 	top:594px;	margin-left: 210px; 	width: 25px;	height: 25px;	background-image: url(../images/rauchmelder_kl.gif);}
+/* OG */
+.my_li_rauchmelder_105 {float: right; 	position: absolute;	left:50%; 	top:530px;	margin-left: -100px; 	width: 25px;	height: 25px;	background-image: url(../images/rauchmelder_kl.gif);}
+.my_li_rauchmelder_106 {float: right; 	position: absolute;	left:50%; 	top:150px;	margin-left: -33px; 	width: 25px;	height: 25px;	background-image: url(../images/rauchmelder_kl.gif);}
+.my_li_rauchmelder_107 {float: right; 	position: absolute;	left:50%; 	top:404px;	margin-left: 194px; 	width: 25px;	height: 25px;	background-image: url(../images/rauchmelder_kl.gif);}
+/* Übersicht */
+.my_li_rauchmelder_301 {float: right; 	position: absolute;	left:48%; 	top:440px;	margin-left: -225px; 	width: 25px;	height: 25px;	background-image: url(../images/rauchmelder_kl.gif);}
+.my_li_rauchmelder_302 {float: right; 	position: absolute;	left:48%; 	top:475px;	margin-left: -385px; 	width: 25px;	height: 25px;	background-image: url(../images/rauchmelder_kl.gif);}
+.my_li_rauchmelder_303 {float: right; 	position: absolute;	left:48%; 	top:252px;	margin-left: -385px; 	width: 25px;	height: 25px;	background-image: url(../images/rauchmelder_kl.gif);}
+.my_li_rauchmelder_304 {float: right; 	position: absolute;	left:48%; 	top:440px;	margin-left: -25px; 	width: 25px;	height: 25px;	background-image: url(../images/rauchmelder_kl.gif);}
+.my_li_rauchmelder_305 {float: right; 	position: absolute;	left:48%; 	top:530px;	margin-left: 180px; 	width: 25px;	height: 25px;	background-image: url(../images/rauchmelder_kl.gif);}
+.my_li_rauchmelder_306 {float: right; 	position: absolute;	left:48%; 	top:252px;	margin-left: 240px; 	width: 25px;	height: 25px;	background-image: url(../images/rauchmelder_kl.gif);}
+.my_li_rauchmelder_307 {float: right; 	position: absolute;	left:48%; 	top:407px;	margin-left: 394px; 	width: 25px;	height: 25px;	background-image: url(../images/rauchmelder_kl.gif);}
+/* EG */
+.my_li_temp_101 {float: right; 	position: absolute;	left:50%; 	top:496px;	margin-left: 30px; 	 	font-size: 14px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif; letter-spacing:0.1em;}
+.my_li_temp_102 {float: right; 	position: absolute;	left:50%; 	top:454px;	margin-left: -141px; 	font-size: 14px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif; letter-spacing:0.1em;}
+.my_li_temp_103 {float: right; 	position: absolute;	left:50%; 	top:225px;	margin-left: -140px; 	font-size: 14px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif; letter-spacing:0.1em;}
+.my_li_temp_104 {float: right; 	position: absolute;	left:50%; 	top:225px;	margin-left: 118px; 	font-size: 14px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif; letter-spacing:0.1em;}
+.my_li_temp_105 {float: right; 	position: absolute;	left:50%; 	top:424px;	margin-left: 178px; 	font-size: 14px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif; letter-spacing:0.1em;}
+/* OG */
+.my_li_temp_106 {float: right; 	position: absolute;	left:50%; 	top:480px;	margin-left: -130px; 	width: 155px;	height: 25px;font-size: 14px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif; letter-spacing:0.1em;}
+.my_li_temp_107 {float: right; 	position: absolute;	left:50%; 	top:220px;	margin-left: -130px; 	width: 155px;	height: 25px;font-size: 14px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif; letter-spacing:0.1em;}
+.my_li_temp_108 {float: right; 	position: absolute;	left:50%; 	top:144px;	margin-left: 170px; 		width: 155px;	height: 25px;font-size: 14px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif; letter-spacing:0.1em;}
+.my_li_temp_109 {float: right; 	position: absolute;	left:50%; 	top:271px;	margin-left: 152px; 		width: 155px;	height: 25px;font-size: 14px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif; letter-spacing:0.1em;}
+.my_li_temp_110 {float: right; 	position: absolute;	left:50%; 	top:366px;	margin-left: 138px; 		width: 155px;	height: 25px;font-size: 14px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif; letter-spacing:0.1em;}
+/* Außentemperatur */
+.my_li_temp_111 {float: right; 	position: absolute;	left:50%; 	top:650px;	margin-left: 208px; 	width: 155px;	height: 25px;font-size: 14px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif; letter-spacing:0.1em;}
+.my_li_temp_112 {float: right; 	position: absolute;	left:50%; 	top:605px;	margin-left: 202px; 	width: 155px;	height: 25px;font-size: 14px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif; letter-spacing:0.1em;}
+/* Übersicht */
+.my_li_temp_301 {float: right; 	position: absolute;	left:48%; 	top:493px;	margin-left: -266px; 	font-size: 14px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif; letter-spacing:0.1em;}
+.my_li_temp_302 {float: right; 	position: absolute;	left:48%; 	top:521px;	margin-left: -399px; 	font-size: 14px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif; letter-spacing:0.1em;}
+.my_li_temp_303 {float: right; 	position: absolute;	left:48%; 	top:298px;	margin-left: -399px; 	font-size: 14px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif; letter-spacing:0.1em;}
+.my_li_temp_304 {float: right; 	position: absolute;	left:48%; 	top:298px;	margin-left: -212px; 	font-size: 14px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif; letter-spacing:0.1em;}
+.my_li_temp_305 {float: right; 	position: absolute;	left:48%; 	top:440px;	margin-left: -176px; 	font-size: 14px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif; letter-spacing:0.1em;}
+.my_li_temp_306 {float: right; 	position: absolute;	left:48%; 	top:491px;	margin-left: 194px; 	width: 155px;	height: 25px;font-size: 14px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif; letter-spacing:0.1em;}
+.my_li_temp_307 {float: right; 	position: absolute;	left:48%; 	top:301px;	margin-left: 194px; 	width: 155px;	height: 25px;font-size: 14px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif; letter-spacing:0.1em;}
+.my_li_temp_308 {float: right; 	position: absolute;	left:48%; 	top:251px;	margin-left: 367px; 		width: 155px;	height: 25px;font-size: 14px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif; letter-spacing:0.1em;}
+.my_li_temp_309 {float: right; 	position: absolute;	left:48%; 	top:332px;	margin-left: 367px; 		width: 155px;	height: 25px;font-size: 14px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif; letter-spacing:0.1em;}
+.my_li_temp_310 {float: right; 	position: absolute;	left:48%; 	top:453px;	margin-left: 381px; 		width: 155px;	height: 25px;font-size: 14px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif; letter-spacing:0.1em;}
+.my_li_temp_311 {float: right; 	position: absolute;	left:48%; 	top:226px;	margin-left: -27px; 	width: 155px;	height: 25px;font-size: 14px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif; letter-spacing:0.1em;}
+.my_li_temp_312 {float: right; 	position: absolute;	left:48%; 	top:650px;	margin-left: -1208px; 	width: 155px;	height: 25px;font-size: 14px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif; letter-spacing:0.1em;}
+
+/* Technik */
+.my_li_temp_wp_vl {float: right; 	position: absolute;	left:50%; 	top:186px;	margin-left: -200px; 		}
+.my_li_temp_wp_rl {float: right; 	position: absolute;	left:50%; 	top:232px;	margin-left: -200px; 		}
+.my_li_wp_leistung_txt {float: right; 	position: absolute;	left:50%; 	top:90px;	margin-left: -230px; 		}
+.my_li_wp_leistung {float: right; 	position: absolute;	left:50%; 	top:115px;	margin-left: -230px; 		}
+.my_li_temp_ww_oben {float: right; 	position: absolute;	left:50%; 	top:82px;	margin-left: 147px; 		}
+.my_li_temp_ww_unten {float: right; 	position: absolute;	left:50%; 	top:232px;	margin-left: 147px; 	}
+.my_li_temp_lftg_ab {float: right; 	position: absolute;	left:50%; 	top:427px;	margin-left: -245px; 	}
+.my_li_temp_lftg_zu {float: right; 	position: absolute;	left:50%; 	top:525px;	margin-left: -245px; 	}
+.my_li_temp_lftg_au {float: right; 	position: absolute;	left:50%; 	top:476px;	margin-left: 200px; 	}
+
+.my_setup_button_fieldcontain{	float: left; 	position: relative;	left:50%; margin-left: -46%; 	width:96%; padding: 5px;	text-align: center;	font-size: 14px;	text-shadow: none;	letter-spacing: 0.08em;	}
+.my_setup_button_laden{	padding: 5px;	text-align: center;	font-size: 14px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif;	font-variant: small-caps; letter-spacing:0.1em;	background-color: #222;	}
+.my_setup_button_speichern{	padding: 5px;	text-align: right;	font-size: 14px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif;	font-variant: small-caps; letter-spacing:0.1em;	background-color: #222;	}
+.my_setup_grid{	float: left; position: relative;	left:50%; margin-left: -46%; 	top:10px; width:96%; padding: 5px;	padding-bottom:30px; text-align: center;	font-size: 14px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif;	font-variant: small-caps; letter-spacing:0.08em;	}
+
+
+
+
+.my_wetter_list .my_listview		{ 	float: left; 	position: relative; 	height:	1050px;				padding:1000px;		font-family: Arial, Helvetica, sans-serif;	font-variant: small-caps; letter-spacing:0.07em; }
+.my_wetter_list .my_li_tag_temp		{	float: right;	position: absolute;	border-radius:10px;	left:50%;	top:60px;	margin-left: -315px;	width:150px;	height:300px; 	}	
+.my_wetter_list .my_li_tag_wind		{	float: right;	position: absolute;	border-radius:10px;	left:50%;	top:60px;	margin-left: -125px;	width:250px;	height:300px;	}	
+/*.my_wetter_list .my_li_tag_wind_rasp{	float: right;	position: absolute;	border-radius:10px;	left:50%;	top:60px;	margin-left: 10px;		width:150px;	height:360px;	}	*/
+.my_wetter_list .my_li_tag_luft		{	float: right;	position: absolute; border-radius:10px;	left:50%;	top:60px;	margin-left:  165px;	width:150px;	height:300px;	}	
+.my_wetter_list .my_li_tag_regen	{	float: right;	position: absolute;	border-radius:10px;	left:50%;	top:390px;	margin-left: -125px;	width:250px;	height:315px;	}	
+.my_wetter_list .my_li_tag_sonne	{	float: right;	position: absolute; border-radius:10px;	left:50%;	top:390px;	margin-left: -315px;	width:150px;	height:315px;	}	
+.my_wetter_list .my_li_tag_hell		{	float: right;	position: absolute;	border-radius:10px;	left:50%;	top:390px;	margin-left:  165px;	width:150px;	height:315px;	}	
+.my_wetter_list .my_input{	padding: 5px;	text-align: center;	font-size: 14px;	text-shadow: none;	letter-spacing: 0.05em;	background-color: #222;	}
+
+
+.my_wetter_am .my_li_tag_am{	float: right;	position: absolute;	border-radius:10px;	left:50%;	top:30px;	margin-left: -225px;	width:450px;	height:450px; 	}	
+.my_wetter_am_kl .my_li_tag_am_kl{	float: right;	position: absolute;	border-radius:10px;	left:50%;	top:30px;	margin-left: -100px;	width:200px;	height:200px; 	}	
+
+.my_lueftung_list .my_listview		{ 	float: left; 	position: relative; 	height:	1050px;				padding:1000px;		font-family: Arial, Helvetica, sans-serif;	font-variant: small-caps; letter-spacing:0.07em; }
+.my_lueftung_list .my_li_tag		{	float: right;	position: absolute;	border-radius:10px;	left:50%;	top:60px;	margin-left: -150px;	width:420px;	height:620px; 	}	
+.my_konfig_list .my_listview		{ 	float: left; 	position: relative; 	height:	1050px;				padding:1000px;		font-family: Arial, Helvetica, sans-serif;	font-variant: small-caps; letter-spacing:0.07em; }
+.my_konfig_list .my_li_tag		{	float: right;	position: absolute;	border-radius:10px;	left:50%;	top:60px;	margin-left: -300px;	width:600px;	height:680px; 	}	
+
+.my_timer_collapsable	{	float: right; 	position: absolute;	left:50%; top:180px;	margin-left: -40%; 	width:80%;	height:200px; font-family: Arial, Helvetica, sans-serif;	font-variant: small-caps; letter-spacing:0.07em;}
+.my_timer_collapsable .my_input{	padding: 5px;	text-align: center;	font-size: 14px;	text-shadow: none;	letter-spacing: 0.05em;	background-color: #222;	}
+
+.my_grid_class  .ui-block-a { width: 100px; padding: 5px;} 
+.my_grid_class  .ui-block-b { width: 460px; padding: 5px;} 
+.my_grid_class  .ui-block-c { width: 100px; padding: 5px;} 
+.my_grid_class  .ui-block-d { width: 100px; padding: 5px;} 
+.my_grid_class  .ui-block-e { width: 460px; padding: 5px;} 
+ 
+.my_raum_list .my_tab { width: 40px; padding: 0px; font-size:14px; } 
+ 
+.my_loader{	float: left; width:100%;	position: relative;	height: 80px; text-align: center;	font-size: 16px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif; letter-spacing: 0.08em;	font-variant: small-caps;}
+.my_setup_button_fieldcontain{	float: left; 	position: relative;	left:50%; margin-left: -46%; 	width:96%; padding: 5px;	text-align: center;	font-size: 14px;	text-shadow: none;	letter-spacing: 0.08em;	}
+.my_setup_button_laden{	padding: 5px;	text-align: center;	font-size: 14px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif;	font-variant: small-caps; letter-spacing:0.1em;	background-color: #222;	}
+.my_setup_button_speichern{	padding: 5px;	text-align: right;	font-size: 14px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif;	font-variant: small-caps; letter-spacing:0.1em;	background-color: #222;	}
+.my_setup_grid{	float: left; position: relative;	left:50%; margin-left: -46%; 	top:10px; width:96%; padding: 5px;	padding-bottom:30px; text-align: center;	font-size: 14px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif;	font-variant: small-caps; letter-spacing:0.08em;}
+
+.my_mobile_grid{font-family: Arial, Helvetica, sans-serif;	font-variant: small-caps; letter-spacing:0.1em;	border:5px}
+.my-video-list .my-listview { }
+.my-video-list .my-video-tag { float: right; position: absolute; left:50%; top:75px; margin-left: -320px; width: 600px; height: 450px; background-image: url(http://192.168.2.250/videostream.cgi?user=gast&pwd=&resolution=32&rate=0);}
+
+
+
+.my_span{ width: 100%; text-align: center; float: left; } 
+/*
+ .my-navbar .my-nav-tag {
+ 	border-radius: 5px ;
+ 	font-family: Arial, Helvetica, sans-serif;
+ 	background-color: #998877;
+}
+*/
+/*
+ .my-list-2 .my-listview {
+ 	margin: 5px;
+	position: absolute;
+	left: 5%;
+	float: right;
+	
+    
+ }
+*/
+
+
+
+
+
+
+ /*
+ .my-raum-list .my-li-licht {
+ 	float: right;
+ 	position: absolute;
+ 	left:50%;
+ 	top:100px;
+	margin-left: 150px; 
+	width: 300px;
+	border-radius: 50px ;
+} 
+*/
+/*
+.my-raum-list .my-li-licht-btn {
+	float: right;
+ 	position: absolute;
+ 	left:50%;
+ 	top:550px;
+	margin-left: 200px; 
+	width: 80px;
+	height: 20px;
+	border-radius: 10px ;
+	font-size:16px;
+}
+*/

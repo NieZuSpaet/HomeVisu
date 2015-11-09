@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+	<title>Unser Haus</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- jQuery Mobile CSS bits -->
+<!--	<link rel="stylesheet" href="css/jquery.mobile-1.4.0-beta.1.css" />	-->
+	<link rel="stylesheet" href="css/jqm-1.4.0_custom_theme.css" /> 
+	<link rel="stylesheet" href="css/jquery.mobile.icons.min.css" /> 
+	<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" /> 
+	
+<!-- Javascript includes -->
+	<script src="tame.js" type="text/javascript"></script>
+	<script src="js/jquery.js"></script> 
+	<script> 	
+		$(document).bind("mobileinit", function()
+		{
+      		$.mobile.hashListeningEnabled = false;
+  		});
+	</script>	
+	<!--	<script src="js/jquery.mobile-1.4.0-beta.1.js"></script> -->
+	<script src="js/jquery.mobile-1.4.5.min.js"></script> 
+
+	<link rel="stylesheet" href="css/custom-1.4.0.css" /> 
+ 	<script src="js/31_sicherung.js" type="text/javascript"></script>
+	<script id="panel-init">
+		$(function() {
+			$( "body>[data-role='panel']" ).panel().enhanceWithin();;
+		});
+	</script>
+</head> 
+<div data-role="panel" id="panel_1" data-position="left" data-display="reveal" data-theme="d" class="my-class">
+		 	<ul data-role="listview" class="my-listview">
+				<li data-role="list-divider" class="my-listview-divider">Steuerung</li>
+				<li data-icon="false"><a href="index.htm" data-rel="external" data-ajax="false" data-transition="fade" 	>Übersicht</a></li>
+				<li data-icon="false"><a href="01_eg.htm" data-rel="external" data-ajax="false" data-transition="fade" 			>EG</a></li>
+				<li data-icon="false"><a href="02_og.htm" data-rel="external" data-ajax="false" data-transition="fade"			>OG</a></li>
+				<li data-icon="false"><a href="03_wetter.htm" data-rel="external" data-ajax="false" data-transition="fade"		>Wetter</a></li>
+				<li data-icon="false"><a href="05_wetterchart_highchart.htm" data-rel="external" data-ajax="false" data-transition="fade"	>Wetterchart</a></li>
+				<li data-icon="false"><a href="04_wind.htm"  data-rel="external" data-ajax="false" data-transition="fade"	>Windrose</a></li>
+				<li data-icon="false"><a href="06_wetterchart_amchart.htm"  data-rel="external" data-ajax="false" data-transition="fade"		>Wetterchart 2</a></li>
+				<li data-icon="false"><a href="07_video.htm" data-rel="external" data-ajax="false" data-transition="fade"		>Video</a></li>
+				<li data-icon="false"><a href="08_technik.htm" data-rel="external" data-ajax="false" data-transition="fade"		>Technik</a></li>
+				<li data-icon="false"><a href="09_technikchart.htm" data-rel="external" data-ajax="false" data-transition="fade"		>Technik (Chart)</a></li>
+				<li data-icon="false"><a href="10_technikchart_archiv.htm" data-rel="external" data-ajax="false" data-transition="fade"	>WP-Archiv</a></li>
+				<li data-role="list-divider" class="my-listview-divider">Setup</li>
+				<li data-icon="false"><a href="21_eg.htm" 				data-rel="external" data-ajax="false" 	data-transition="slide">EG</a></li>
+				<li data-icon="false"><a href="22_og.htm" 				data-rel="external" data-ajax="false" 	data-transition="slide" >OG</a></li>
+				<li data-icon="false"><a href="23_aussen.htm" 		data-rel="external" data-ajax="false" 	data-transition="slide" >Außen</a></li>
+				<li data-icon="false"><a href="24_timer.htm" 			data-rel="external" data-ajax="false" 	data-transition="fade">Timer</a></li>
+				<li data-icon="false"><a href="25_raffstore.htm" 	data-rel="external" data-ajax="false" 	data-transition="slide" >Raffstore Zeitsteuerung</a></li>
+				<li data-icon="false"><a href="26_lueftung.htm" 	data-rel="external" data-ajax="false" 	data-transition="slide" >Lüftung</a></li>
+				<li data-icon="false"><a href="31_sicherung.htm" 		data-rel="external" data-ajax="false" 	data-transition="slide" >Sicherung</a></li>
+			</ul>
+</div>
+<body onload="INIT()">
+	
+<!-- ****************************************************************************** -->	
+<!--																				-->
+<!--								page Sicheurng									-->
+<!--																				-->
+<!-- ****************************************************************************** -->		
+<div data-role="page" id="sicherung" data-fullscreen="true" data-theme="d" class="">
+	<div data-role="header" data-position="fixed" >
+		<a href="#panel_1"  data-ajax="false" data-transition="slide" data-direction="reverse" class="my_text" > Navigation </a>
+		<h1 class="my_text" style="font-size:16px" data-inline="true">Sicherung Config-File</h1>
+		<span id="systemtime" class="my_header" data-inline="true">No Time !!!</span>
+	</div>
+	<div data-role="content" style="padding:25px; height:1000px">
+		    <ul data-role="listview" class="my_konfig_list">
+	           	<li class="my_li_tag" style="border-radius: 10px"> 
+	           		<div class="ui-grid-b">
+				  		<div class="ui-block-a" style="margin-top:17px; text-align:center">Stromstossschalter:</div>
+				  		<div class="ui-block-b" style="padding-left:10px"><button name="Speichern" type="button" id="lesen_ss" data-inline="true"  class="my_setup_button_speichern">File lesen</button>  </div>
+	         	  		<div class="ui-block-c" style="padding-left:10px"><button name="Speichern" type="button" id="schreiben_ss" data-inline="true"  class="my_setup_button_speichern">File schreiben</button> </div>
+	    		  		<div class="ui-block-a" style="margin-top:17px; text-align:center">Dimmer:</div>
+				  		<div class="ui-block-b" style="padding-left:10px"><button name="Speichern" type="button" id="lesen_dim" data-inline="true"  class="my_setup_button_speichern">File lesen</button>  </div>
+	         	  		<div class="ui-block-c" style="padding-left:10px"><button name="Speichern" type="button" id="schreiben_dim" data-inline="true"  class="my_setup_button_speichern">File schreiben</button> </div>
+	    		  		<div class="ui-block-a" style="margin-top:17px; text-align:center">Lampen:</div>
+				  		<div class="ui-block-b" style="padding-left:10px"><button name="Speichern" type="button" id="lesen_lampe" data-inline="true"  class="my_setup_button_speichern">File lesen</button>  </div>
+	         	  		<div class="ui-block-c" style="padding-left:10px"><button name="Speichern" type="button" id="schreiben_lampe" data-inline="true"  class="my_setup_button_speichern">File schreiben</button> </div>
+	    		  		<div class="ui-block-a" style="margin-top:17px; text-align:center">Raffstore:</div>
+				  		<div class="ui-block-b" style="padding-left:10px"><button name="Speichern" type="button" id="lesen_raff" data-inline="true"  class="my_setup_button_speichern">File lesen</button>  </div>
+	         	  		<div class="ui-block-c" style="padding-left:10px"><button name="Speichern" type="button" id="schreiben_raff" data-inline="true"  class="my_setup_button_speichern">File schreiben</button> </div>
+	    		  		<div class="ui-block-a" style="margin-top:17px; text-align:center">Raffstore (Visu):</div>
+				  		<div class="ui-block-b" style="padding-left:10px"><button name="Speichern" type="button" id="lesen_raff_visu" data-inline="true"  class="my_setup_button_speichern">File lesen</button>  </div>
+	         	  		<div class="ui-block-c" style="padding-left:10px"><button name="Speichern" type="button" id="schreiben_raff_visu" data-inline="true"  class="my_setup_button_speichern">File schreiben</button> </div>
+	         	   		<div class="ui-block-a" style="margin-top:17px; text-align:center">Wetterdaten:</div>
+				  		<div class="ui-block-b" style="padding-left:10px"><button name="Speichern" type="button" id="lesen_wetterdaten" data-inline="true"  class="my_setup_button_speichern">File lesen</button>  </div>
+	         	  		<div class="ui-block-c" style="padding-left:10px"><button name="Speichern" type="button" id="schreiben_wetterdaten" data-inline="true"  class="my_setup_button_speichern">File schreiben</button> </div>
+	         	   		<div class="ui-block-a" style="margin-top:17px; text-align:center">Technik:</div>
+				  		<div class="ui-block-b" style="padding-left:10px"><button name="Speichern" type="button" id="lesen_technik" data-inline="true"  class="my_setup_button_speichern">File lesen</button>  </div>
+	         	  		<div class="ui-block-c" style="padding-left:10px"><button name="Speichern" type="button" id="schreiben_technik" data-inline="true"  class="my_setup_button_speichern">File schreiben</button> </div>
+	    	</div>  
+	         	  	
+	         		<label for="status_xml" class="my_text">Status :</label>
+					<input type="text" readonly="readonly" id="status_xml" class="my_text"></input>
+	         	  	<label for="file_xml" class="my_text">File :</label>
+					<input type="text" readonly="readonly" id="file_xml" class="my_text"></input>
+	         	  	<label for="error_lesen" class="my_text">Error-ID Lesen :</label>
+					<input type="text" readonly="readonly" id="error_lesen" class="my_text"></input>
+	         	  	<label for="error_schreiben" class="my_text">Error-ID Schreiben :</label>
+					<input type="text" readonly="readonly" id="error_schreiben" class="my_text"></input>
+	         	  		
+	         	  		
+					
+			  	</li>
+			</ul>
+	</div> <!-- data-role="content" -->		
+	
+	<div data-role="footer" data-position="fixed">
+		
+</div><!-- /footer -->
+</div> <!-- page:  -->
+
+</body>
+</html>

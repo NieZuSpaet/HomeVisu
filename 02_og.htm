@@ -1,0 +1,237 @@
+﻿<!doctype html>
+<html>
+<head>
+	<title>Unser Haus</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<!-- jQuery Mobile CSS bits -->
+	<link rel="stylesheet" href="css/jqm-1.4.0_custom_theme.css" /> 
+	<link rel="stylesheet" href="css/jquery.mobile.icons.min.css" /> 
+	<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" /> 
+	<link rel="stylesheet" href="css/custom-1.4.0.css" /> 
+		
+<!-- Javascript includes -->
+	<script src="tame.js" type="text/javascript"></script>
+	<script src="js/jquery.js"></script> 
+	<script> 	
+		$(document).bind("mobileinit", function()
+		{
+      		$.mobile.hashListeningEnabled = false;
+  		});
+	</script>	
+	<script src="js/jquery.mobile-1.4.5.min.js"></script> 
+
+ 	<script src="js/02_og.js" type="text/javascript"></script>
+  	
+	<script id="panel-init">
+		$(function() {
+			$( "body>[data-role='panel']" ).panel().enhanceWithin();
+		});
+	</script>
+
+</head> 
+<div data-role="panel" id="panel_1" data-position="left" data-display="reveal" data-theme="d" class="my-class">
+		 	<ul data-role="listview" class="my-listview">
+				<li data-role="list-divider" class="my-listview-divider">Steuerung</li>
+				<li data-icon="false"><a href="index.htm" data-rel="external" data-ajax="false" data-transition="fade" 	>Übersicht</a></li>
+				<li data-icon="false"><a href="01_eg.htm" data-rel="external" data-ajax="false" data-transition="fade" 			>EG</a></li>
+				<li data-icon="false"><a href="02_og.htm" data-rel="external" data-ajax="false" data-transition="fade"			>OG</a></li>
+				<li data-icon="false"><a href="03_wetter.htm" data-rel="external" data-ajax="false" data-transition="fade"		>Wetter</a></li>
+				<li data-icon="false"><a href="05_wetterchart_highchart.htm" data-rel="external" data-ajax="false" data-transition="fade"	>Wetterchart</a></li>
+				<li data-icon="false"><a href="04_wind.htm"  data-rel="external" data-ajax="false" data-transition="fade"	>Windrose</a></li>
+				<li data-icon="false"><a href="06_wetterchart_amchart.htm"  data-rel="external" data-ajax="false" data-transition="fade"		>Wetterchart 2</a></li>
+				<li data-icon="false"><a href="07_video.htm" data-rel="external" data-ajax="false" data-transition="fade"		>Video</a></li>
+				<li data-icon="false"><a href="08_technik.htm" data-rel="external" data-ajax="false" data-transition="fade"		>Technik</a></li>
+				<li data-icon="false"><a href="09_technikchart.htm" data-rel="external" data-ajax="false" data-transition="fade"		>Technik (Chart)</a></li>
+				<li data-icon="false"><a href="10_technikchart_archiv.htm" data-rel="external" data-ajax="false" data-transition="fade"	>WP-Archiv</a></li>
+				<li data-role="list-divider" class="my-listview-divider">Setup</li>
+				<li data-icon="false"><a href="21_eg.htm" 				data-rel="external" data-ajax="false" 	data-transition="slide">EG</a></li>
+				<li data-icon="false"><a href="22_og.htm" 				data-rel="external" data-ajax="false" 	data-transition="slide" >OG</a></li>
+				<li data-icon="false"><a href="23_aussen.htm" 		data-rel="external" data-ajax="false" 	data-transition="slide" >Außen</a></li>
+				<li data-icon="false"><a href="24_timer.htm" 			data-rel="external" data-ajax="false" 	data-transition="fade">Timer</a></li>
+				<li data-icon="false"><a href="25_raffstore.htm" 	data-rel="external" data-ajax="false" 	data-transition="slide" >Raffstore Zeitsteuerung</a></li>
+				<li data-icon="false"><a href="26_lueftung.htm" 	data-rel="external" data-ajax="false" 	data-transition="slide" >Lüftung</a></li>
+				<li data-icon="false"><a href="31_sicherung.htm" 		data-rel="external" data-ajax="false" 	data-transition="slide" >Sicherung</a></li>
+			</ul>
+</div>
+
+<body onload="init()">
+
+<!-- ****************************************************************************** -->	
+<!--																				-->
+<!--								page OG										-->
+<!--																				-->
+<!-- ****************************************************************************** -->		
+
+<div data-role="page" id="og" data-fullscreen="true" data-theme="d" class="my_raum_list">
+	<div data-role="header" data-position="fixed">
+		<a href="#panel_1"  data-ajax="false" data-transition="slide" data-direction="reverse" class="my_text" > Navigation </a>
+		<h1 class="my_text" style="font-size:16px" data-inline="true">Obergeschoss</h1>
+		<span id="systemtime" class="my_header" data-inline="true">No Time !!!</span>
+	</div>
+	<div data-role="content">
+		<div data-role="popup" id="popupDimmer_og" data-theme="d" class="class_popup_dimmer_og">
+			<ul data-role="listview"  data-inline="true">
+				<li>
+					<h4 align="middle">Licht:</h4>
+					<div class="ui-grid-b">
+						<div class="ui-block-a"><div class="ui-bar ui-bar-c" style="height:60px; background:#333333"><button name="dunkler" type="button" id="btn_dim_dwn_og"> - </button></div></div>
+						<div class="ui-block-b"><div class="ui-bar ui-bar-c" style="height:60px; background:#333333"><input type="text" readonly="readonly" class="my-input" id="dim_value_og"></input></div></div>
+						<div class="ui-block-c"><div class="ui-bar ui-bar-c" style="height:60px; background:#333333"><button name="heller" type="button" id="btn_dim_up_og"> + </button></div></div>
+					</div><!-- /grid-b -->
+					<div class="ui-grid-a">
+						<div class="ui-block-a" style="width:20%">
+							<button name="Off" type="button" id="btn_dim_off_og" data-inline="true">Aus</button>        					
+	   					</div><!-- /ui-block -->
+						<div class="ui-block-b" style="width:60%">
+	    					<input type="range" name="slider" id="slider_dim_og" data-highlight="true" min="0" max="100"></input>
+						</div><!-- /ui-block -->
+						<div class="ui-block-c" style="width:20%">
+							<button name="Set" type="button" id="btn_dim_set_og" data-inline="true">Set</button>        					
+						</div><!-- /ui-block -->
+					</div>
+				</li>
+			</ul>
+		</div> <!-- popup -->
+		<div data-role="popup" id="popupRaffstore_og" data-theme="d" class="class_popup_raffstore_og">
+			<ul data-role="listview" data-inline="true">
+				<li>
+					<h4 align="middle">Raffstore:</h4>
+					<div class="ui-grid-a">
+						<div class="ui-block-a" style="width:25%; padding:13px">Höhe:</div>
+	    				<div class="ui-block-b" style="width:75%"><input type="range" name="slider" id="slider_raff_pos_og" data-highlight="true" min="0" max="100"></input></div><!-- /ui-block -->
+					</div><!-- /grid-b -->
+					<div class="ui-grid-a">
+						<div class="ui-block-a" style="width:25%; padding:13px">Winkel:</div>
+						<div class="ui-block-b" style="width:75%"><input type="range" name="slider" id="slider_raff_ang_og" data-highlight="true" min="0" max="100"></input></div><!-- /ui-block -->
+					</div><br>
+					<div class="ui-grid-b" >
+						<div class="ui-block-a"><div style="width:95px"><button name="auf" type="button" id="btn_raff_up_og">Auf</button></div></div>
+						<div class="ui-block-b"><div style="width:95px"><button name="set" type="button" id="btn_raff_set_og">Set</button></div></div>
+						<div class="ui-block-c"><div style="width:95px"><button name="zu" type="button" id="btn_raff_dwn_og">Zu</button></div></div>
+					</div><!-- /grid-b -->
+					<div class="ui-grid-solo" >
+						<label for="btn_raff_sun_og" style="text-align: center; width:240px;">Verschattung</label>
+        				<input type="checkbox" id="btn_raff_sun_og" name="sun" ></input>
+        			</div>
+					<div class="ui-grid-solo" >
+						<label for="btn_raff_tracking_og" style="text-align: center; width:240px;">Disable Tracking</label>
+						<input type="checkbox" id="btn_raff_tracking_og" name="tracking" ></input>
+					</div><!-- /grid-b -->
+	
+					<div class="ui-grid-solo" >
+						<label for="btn_raff_door_og" style="text-align: center; width:240px;">Türkontakt aktiv</label>
+        				<input type="checkbox" id="btn_raff_door_og" name="door" ></input>
+        			</div>	
+	
+				</li>
+			</ul>
+		</div> <!-- popup -->
+	<div data-role="popup" id="popupLampe_og" class="popup_steckdose">
+	   		<select name="toggle_lampe_og" id="toggle_lampe_og" data-role="slider">
+	           	<option value="off">Off</option>
+	           	<option value="on">On</option>
+	           </select>
+	   	</div>	
+	   	
+	<div data-role="popup" id="popupSteckdose_og" class="popup_steckdose">
+	   		<select name="toggle_steckdose_og" id="toggle_steckdose_og" data-role="slider">
+	           	<option value="off">Off</option>
+	           	<option value="on">On</option>
+	           </select>
+	   	</div>	
+	   	
+
+
+	<ul data-role="listview">
+           	<li class="my_li_tag_og"></li>
+           		<span id="temp106" class="my_li_temp_106">Temp. 7</span>
+      			<span id="temp107" class="my_li_temp_107">Temp. 8</span>
+      			<span id="temp108" class="my_li_temp_108">Temp. 9</span>
+      			<span id="temp109" class="my_li_temp_109">Temp. 10</span>
+      			<span id="temp110" class="my_li_temp_110">Temp. 11</span>
+  	 			<span id="temp112" class="my_li_temp_112">Temp. 12</span>
+  
+       	     	<a href="#popupRaffstore_og" data-rel="popup" data-transition="fade" title="Raffstore 1" id="raffstore106" class="my_li_raffstore_106"></a>
+        		<a href="#" title="Raffstore 1" id="raffstore206" class="my_li_raffstore_206"></a>
+  			 	<a href="#popupRaffstore_og" data-rel="popup" data-transition="fade" title="Raffstore 2" id="raffstore107" class="my_li_raffstore_107"></a>
+        	 	<a href="#" title="Raffstore 2" id="raffstore207" class="my_li_raffstore_207"></a>
+         		<a href="#popupRaffstore_og" data-rel="popup" data-transition="fade" title="Raffstore 3" id="raffstore108" class="my_li_raffstore_108"></a>
+         		<a href="#" title="Raffstore 3" id="raffstore208" class="my_li_raffstore_208"></a>
+         		<a href="#popupRaffstore_og" data-rel="popup" data-transition="fade" title="Raffstore 4" id="raffstore109" class="my_li_raffstore_109"></a>
+         		<a href="#" title="Raffstore 4" id="raffstore209" class="my_li_raffstore_209"></a>
+         		<a href="#popupRaffstore_og" data-rel="popup" data-transition="fade" title="Raffstore 5" id="raffstore110" class="my_li_raffstore_110"></a>
+         		<a href="#" title="Raffstore 5" id="raffstore210" class="my_li_raffstore_210"></a>
+         		<a href="#popupRaffstore_og" data-rel="popup" data-transition="fade" title="Raffstore 6" id="raffstore111" class="my_li_raffstore_111"></a>
+         		<a href="#" title="Raffstore 6" id="raffstore211" class="my_li_raffstore_211"></a>
+         		<a href="#popupRaffstore_og" data-rel="popup" data-transition="fade" title="Raffstore 7" id="raffstore112" class="my_li_raffstore_112"></a>
+         		<a href="#" title="Raffstore 7" id="raffstore212" class="my_li_raffstore_212"></a>
+  
+  	     		<a href="#" title="Fenster" id="fenster108" class="my_li_fenster_108"></a>
+         		<a href="#" title="Fenster" id="fenster109" class="my_li_fenster_109"></a>
+         		<a href="#" title="Fenster" id="fenster110" class="my_li_fenster_110"></a>
+         		<a href="#" title="Fenster" id="fenster111" class="my_li_fenster_111"></a>
+         		<a href="#" title="Fenster" id="fenster112" class="my_li_fenster_112"></a>
+         		<a href="#" title="Fenster" id="fenster113" ></a>
+         		<a href="#" title="Fenster" id="fenster114" ></a>
+        
+               	<a href="#" title="Rauchmelder 5" id="rauchmelder105" class="my_li_rauchmelder_105"></a>
+        	 	<a href="#" title="Rauchmelder 6" id="rauchmelder106" class="my_li_rauchmelder_106"></a>
+        	 	<a href="#" title="Rauchmelder 7" id="rauchmelder107" class="my_li_rauchmelder_107"></a>
+         	
+         	 	<a href="#popupSteckdose_og" data-rel="popup" title="Raum 1 Steckdose 1"  data-transition="fade" id="steckdose135" class="my_li_steck_135"></a>
+           		<a href="#popupSteckdose_og" data-rel="popup" title="Raum 1 Steckdose 2"  data-transition="fade" id="steckdose136" class="my_li_steck_136"></a>
+           		<a href="#popupSteckdose_og" data-rel="popup" title="Raum 1 Steckdose 3"  data-transition="fade" id="steckdose137" class="my_li_steck_137"></a>
+           		<a href="#popupSteckdose_og" data-rel="popup" title="Raum 1 Steckdose 4"  data-transition="fade" id="steckdose138" class="my_li_steck_138"></a>
+           		<a href="#popupSteckdose_og" data-rel="popup" title="Raum 1 Steckdose 5"  data-transition="fade" id="steckdose139" class="my_li_steck_139"></a>
+           		<a href="#popupSteckdose_og" data-rel="popup" title="Raum 1 Steckdose 6"  data-transition="fade" id="steckdose140" class="my_li_steck_140"></a>
+           		<a href="#popupSteckdose_og" data-rel="popup" title="Raum 2 Steckdose 1"  data-transition="fade" id="steckdose141" class="my_li_steck_141"></a>
+           		<a href="#popupSteckdose_og" data-rel="popup" title="Raum 2 Steckdose 2"  data-transition="fade" id="steckdose142" class="my_li_steck_142"></a>
+           		<a href="#popupSteckdose_og" data-rel="popup" title="Raum 2 Steckdose 3"  data-transition="fade" id="steckdose143" class="my_li_steck_143"></a>
+           		<a href="#popupSteckdose_og" data-rel="popup" title="Raum 2 Steckdose 4"  data-transition="fade" id="steckdose144" class="my_li_steck_144"></a>
+           		<a href="#popupSteckdose_og" data-rel="popup" title="Raum 2 Steckdose 5"  data-transition="fade" id="steckdose145" class="my_li_steck_145"></a>
+           		<a href="#popupSteckdose_og" data-rel="popup" title="Raum 3 Steckdose 1"  data-transition="fade" id="steckdose146" class="my_li_steck_146"></a>
+           		<a href="#popupSteckdose_og" data-rel="popup" title="Raum 3 Steckdose 2"  data-transition="fade" id="steckdose147" class="my_li_steck_147"></a>
+           		<a href="#popupSteckdose_og" data-rel="popup" title="Raum 3 Steckdose 3"  data-transition="fade" id="steckdose148" class="my_li_steck_148"></a>
+           		<a href="#popupSteckdose_og" data-rel="popup" title="Raum 4 Steckdose 1"  data-transition="fade" id="steckdose149" class="my_li_steck_149"></a>
+           		<a href="#popupSteckdose_og" data-rel="popup" title="Raum 4 Steckdose 2"  data-transition="fade" id="steckdose150" class="my_li_steck_150"></a>
+           		<a href="#popupSteckdose_og" data-rel="popup" title="Raum 4 Steckdose 3"  data-transition="fade" id="steckdose151" class="my_li_steck_151"></a>
+           		<a href="#popupSteckdose_og" data-rel="popup" title="Raum 4 Steckdose 4"  data-transition="fade" id="steckdose152" class="my_li_steck_152"></a>
+           		<a href="#popupSteckdose_og" data-rel="popup" title="Raum 5 Steckdose 1"  data-transition="fade" id="steckdose153" class="my_li_steck_153"></a>
+           		<a href="#popupSteckdose_og" data-rel="popup" title="Raum 5 Steckdose 2"  data-transition="fade" id="steckdose154" class="my_li_steck_154"></a>
+           		<a href="#popupSteckdose_og" data-rel="popup" title="Raum 5 Steckdose 3"  data-transition="fade" id="steckdose155" class="my_li_steck_155"></a>
+           		<a href="#popupSteckdose_og" data-rel="popup" title="Raum 5 Steckdose 4"  data-transition="fade" id="steckdose156" class="my_li_steck_156"></a>
+<!--           		<a href="#popupSteckdose_og" data-rel="popup" title="Raum 5 Steckdose 1"  data-transition="fade" id="steckdose157" class="my_li_steck_157"></a>
+           		<a href="#popupSteckdose_og" data-rel="popup" title="Raum 5 Steckdose 2"  data-transition="fade" id="steckdose158" class="my_li_steck_158"></a>
+-->           	
+  
+            	
+               	<a href="#popupLampe_og"  data-rel="popup" title="Raum 2 Lampe 1" data-transition="fade" id="lampe103" class="my_li_lampe_103"></a>
+            	<a href="#popupLampe_og"  data-rel="popup" title="Raum 3 Lampe 1" data-transition="fade" id="lampe104" class="my_li_lampe_104"></a>
+            	<a href="#popupLampe_og"  data-rel="popup" title="Raum 5 Lampe 1" data-transition="fade" id="lampe105" class="my_li_lampe_105"></a>
+            	
+            	<a href="#popupDimmer_og" data-rel="popup" title="Raum 2 Dimmer 1" data-transition="fade" id="dimmer112" class="my_li_dimm_102"></a>
+               	<a href="#popupDimmer_og" data-rel="popup" title="Raum 2 Dimmer 2" data-transition="fade" id="dimmer108" class="my_li_dimm_108"></a>
+            	<a href="#popupDimmer_og" data-rel="popup" title="Raum 3 Dimmer 1" data-transition="fade" id="dimmer109" class="my_li_dimm_109"></a>
+            	<a href="#popupDimmer_og" data-rel="popup" title="Raum 4 Dimmer 1" data-transition="fade" id="dimmer110" class="my_li_dimm_110"></a>
+            	<a href="#popupDimmer_og" data-rel="popup" title="Raum 5 Dimmer 1" data-transition="fade" id="dimmer111" class="my_li_dimm_111"></a>
+     		
+<!--               	<a href="#" title="Lichttaster ID 13"  data-transition="slide" class="my_li_schalter_113"></a>
+            	<a href="#" title="Lichttaster ID 14"  data-transition="slide" class="my_li_schalter_114"></a>
+            	<a href="#" title="Lichttaster ID 15"  data-transition="slide" class="my_li_schalter_115"></a>
+            	<a href="#" title="Lichttaster ID 16"  data-transition="slide" class="my_li_schalter_116"></a>
+            	<a href="#" title="Lichttaster ID 17"  data-transition="slide" class="my_li_schalter_117"></a>
+            	<a href="#" title="Lichttaster ID 18"  data-transition="slide" class="my_li_schalter_118"></a>
+            	<a href="#" title="Lichttaster ID 19"  data-transition="slide" class="my_li_schalter_119"></a>
+            	<a href="#" title="Lichttaster ID 20"  data-transition="slide" class="my_li_schalter_120"></a>
+-->           </ul> 
+	</div> <!-- data-role="content" -->		
+	<div data-role="footer" data-position="fixed">
+	</div><!-- /footer -->
+</div> <!-- page:  -->
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+TwinCAT PLC1: Source: TCPLC.PlcAuxTask;  Timestamp: 3/16/2015 5:55:51 AM 281 ms  Message: PLC Download: 1094 Symbols, 929 DataTypes
+TwinCAT PLC1: Source: TCPLC.PlcAuxTask;  Timestamp: 3/16/2015 5:55:51 AM 592 ms  Message: PLC Download: 1094 Symbols, 929 DataTypes
+TwinCAT PLC1: Source: TCPLC.PlcAuxTask;  Timestamp: 3/16/2015 5:56:13 AM 778 ms  Message: PLC Online Change (1): 1094 Symbols, 929 DataTypes
+TwinCAT PLC1: Source: TCPLC.PlcAuxTask;  Timestamp: 3/17/2015 8:42:44 PM 878 ms  Message: PLC Online Change (2): 1095 Symbols, 929 DataTypes
+
+TwinCAT PLC1: Source: TCPLC.PlcAuxTask;  Timestamp: 3/15/2015 8:58:56 PM 526 ms  Message: PLC Online Change (2): 1089 Symbols, 928 DataTypes
+TwinCAT PLC1: Source: TCPLC.PlcAuxTask;  Timestamp: 3/15/2015 9:02:38 PM 425 ms  Message: PLC Online Change (3): 1090 Symbols, 928 DataTypes
+TwinCAT PLC1: Source: TCPLC.PlcAuxTask;  Timestamp: 3/15/2015 9:19:18 PM 658 ms  Message: PLC Online Change (4): 1094 Symbols, 929 DataTypes
+TwinCAT PLC1: Source: TCPLC.PlcAuxTask;  Timestamp: 3/15/2015 9:27:57 PM 47 ms  Message: PLC Online Change (5): 1094 Symbols, 929 DataTypes
+TwinCAT PLC1: Source: TCPLC.PlcAuxTask;  Timestamp: 3/15/2015 9:32:23 PM 416 ms  Message: PLC Online Change (6): 1094 Symbols, 929 DataTypes
+ 543 ms  Message: Socket opened (UDP)!        Internal handle: -687341567
+PM 489 ms  Message: PLC Online Change (3): 1080 Symbols, 932 DataTypes
+TwinCAT PLC1: Source: TCPLC.PlcAuxTask;  Timestamp: 2/10/2015 5:23:22 PM 516 ms  Message: PLC Online Change (4): 1080 Symbols, 932 DataTypes
+TwinCAT PLC1: Source: TCPLC.PlcAuxTask;  Timestamp: 2/10/2015 5:28:13 PM 756 ms  Message: PLC Online Change (5): 1080 Symbols, 932 DataTypes
+TwinCAT PLC1: Source: TCPLC.PlcAuxTask;  Timestamp: 2/10/2015 5:28:13 PM 825 ms  Message: Socket opened (UDP)!        Internal handle: 419954689
+TwinCAT PLC1: Source: TCPLC.PlcAuxTask;  Timestamp: 2/10/2015 5:37:31 PM 289 ms  Message: PLC Online Change (6): 1084 Symbols, 932 DataTypes
+TwinCAT PLC1: Source: TCPLC.PlcAuxTask;  Timestamp: 2/10/2015 5:40:48 PM 188 ms  Message: PLC Online Change (7): 1084 Symbols, 932 DataTypes
+TwinCAT PLC1: Source: TCPLC.PlcAuxTask;  Timestamp: 2/10/2015 5:45:35 PM 612 ms  Message: PLC Online Change (8): 1088 Symbols, 932 DataTypes
+TwinCAT PLC1: Source: TCPLC.PlcAuxTask;  Timestamp: 2/10/2015 5:50:33 PM 229 ms  Message: PLC Online Change (9): 1088 Symbols, 932 DataTypes
+TwinCAT PLC1: Source: TCPLC.PlcAuxTask;  Timestamp: 2/10/2015 7:53:00 PM 24 ms  Message: PLC Online Change (10): 1088 Symbols, 932 DataTypes
+TwinCAT PLC1: Source: TCPLC.PlcAuxTask;  Timestamp: 2/10/2015 8:33:38 PM 344 ms  Message: PLC Online Change (11): 1088 Symbols, 932 DataTypes
+TwinCAT PLC1: Source: TCPLC.PlcAuxTask;  Timestamp: 2/10/2015 8:48:08 PM 488 ms  Message: PLC Online Change (12): 1088 Symbols, 932 DataTypes
+TwinCAT PLC1: Source: TCPLC.PlcAuxTask;  Timestamp: 2/10/2015 8:57:45 PM 857 ms  Message: PLC Online Change (13): 1088 Symbols, 932 DataTypes
+TwinCAT PLC1: Source: TCPLC.PlcAuxTask;  Timestamp: 2/15/2015 11:28:17 AM 919 ms  Message: PLC Online Change (14): 1088 Symbols, 932 DataTypes
+TwinCAT PLC1: Source: TCPLC.PlcAuxTask;  Timestamp: 2/15/2015 11:32:59 AM 266 ms  Message: PLC Online Change (15): 1088 Symbols, 932 DataTypes
+TwinCAT PLC1: Source: TCPLC.PlcAuxTask;  Timestamp: 2/15/2015 12:55:30 PM 208 ms  Message: PLC Download: 1088 Symbols, 932 DataTypes
+TwinCAT PLC1: Source: TCPLC.PlcAuxTask;  Timestamp: 2/15/2015 12:55:30 PM 208 ms  Message: PLC Download: 1088 Symbols, 932 DataTypes
+TwinCAT PLC1: Source: TCPLC.PlcAuxTask;  Timestamp: 2/15/2015 12:55:33 PM 521 ms  Message: Socket opened (UDP)!        Internal handle: 436731905
+TwinCAT PLC1: Source: TCPLC.PlcAuxTask;  Timestamp: 2/7/2015 3:26:10 PM 204 ms  Message: PLC Download: 1047 Symbols, 927 DataTypes
+TwinCAT PLC1: Source: TCPLC.PlcAuxTask;  Timestamp: 2/7/2015 3:26:23 PM 267 ms  Message: PLC Download: 1047 Symbols, 927 DataTypes
+TwinCAT PLC1: Source: TCPLC.PlcAuxTask;  Timestamp: 2/7/2015 3:26:23 PM 267 ms  Message: PLC Download: 1047 Symbols, 927 DataTypes
+TwinCAT PLC1: Source: TCPLC.PlcAuxTask;  Timestamp: 2/7/2015 3:32:50 PM 847 ms  Message: PLC Online Change (1): 1047 Symbols, 927 DataTypes

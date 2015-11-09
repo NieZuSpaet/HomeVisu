@@ -1,0 +1,159 @@
+
+	
+.my_back_btn{padding-top:33px; top:10px;}
+/*.my_text{text-shadow: none;	font-family: Arial, Helvetica, sans-serif;	font-variant: small-caps; font-size:20px; letter-spacing:0.1em;	width:100%; text-align:center;}*/
+.my_mobile_header	{text-shadow: none;	font-family: Arial, Helvetica, sans-serif;	font-variant: small-caps; font-size:20px; letter-spacing:0.05em;	text-align:center;}
+
+.my_loader{	float: left; width:100%;	position: relative;	height: 80px; text-align: center;	font-size: 16px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif; letter-spacing: 0.08em;	font-variant: small-caps;}
+
+.my_raum_list .my-listview { }	
+.my_raum_list .popup_steckdose{ float: right; 	position: absolute;	top:-90px; margin-left: -25px; padding:8px;} 
+
+.class_dimmer{ } 
+.class_raffstore{ } 
+.my_raum_list .my_input{	padding: 5px;	text-align: center;	font-size: 14px;	text-shadow: none;	letter-spacing: 0.05em;	background-color: #222;	}
+
+.red 	{background-color: 	#C60D0D;	color: 	#C60D0D;} 
+.green 	{background-color: 	green; 		color: 	green;} 
+.yellow {background-color: 	yellow;		color: 	yellow;} 
+.dark 	{background-color:	black;		color: 	black;} 
+
+
+/* EG ICONs */
+.my_li_raffstore	{float: right; 	position: absolute;	width: 33px;	height: 33px;	background-image: url(../images/raffstore.gif);}
+.my_li_fenster		{float: right; 	position: absolute;	width: 33px;	height: 33px;	background-image: url(../images/fenster.gif);}
+.my_li_dimm 		{float: left; 	position: absolute; width: 33px;	height: 33px;	background-image: url(../images/dimmer.gif);}
+.my_li_lampe 		{float: right;	position: absolute;	width: 33px;	height: 33px;	background-image: url(../images/lampe.gif);}
+.my_li_steck 		{float: left; 	position: absolute; width: 33px;	height: 33px;	background-image: url(../images/steckdose.gif); } 
+.my_li_rauchmelder	{float: right; 	position: absolute;	width: 33px;	height: 33px;	background-image: url(../images/rauchmelder.gif);}
+
+.my_li_temp_101 {float: right; 	position: absolute;	left:50%; 	top:871px;	margin-left: 350px; 	width: 155px;	height: 33px;}
+.my_li_temp_102 {float: right; 	position: absolute;	left:50%; 	top:748px;	margin-left: 30px; 		width: 155px;	height: 33px;}
+.my_li_temp_103 {float: right; 	position: absolute;	left:50%; 	top:850px;	margin-left: -200px; 	width: 155px;	height: 33px;}
+.my_li_temp_104 {float: right; 	position: absolute;	left:50%; 	top:365px;	margin-left: -200px; 	width: 155px;	height: 33px;}
+.my_li_temp_105 {float: right; 	position: absolute;	left:50%; 	top:365px;	margin-left: 220px; 	width: 155px;	height: 33px;}
+.my_li_temp_106 {float: right; 	position: absolute;	left:50%; 	top:625px;	margin-left: 230px; 	width: 155px;	height: 33px;}
+/* EG */
+.my_li_temp_107 {float: right; 	position: absolute;	left:50%; 	top:871px;	margin-left: 350px; 	width: 155px;	height: 33px;}
+.my_li_temp_108 {float: right; 	position: absolute;	left:50%; 	top:778px;	margin-left: -80px; 	width: 155px;	height: 33px;}
+.my_li_temp_109 {float: right; 	position: absolute;	left:50%; 	top:220px;	margin-left: -180px; 	width: 155px;	height: 33px;}
+.my_li_temp_110 {float: right; 	position: absolute;	left:50%; 	top:248px;	margin-left: 248px; 		width: 155px;	height: 33px;}
+.my_li_temp_111 {float: right; 	position: absolute;	left:50%; 	top:550px;	margin-left: 210px; 		width: 155px;	height: 33px;}
+
+.my_setup_button_fieldcontain{	float: left; 	position: relative;	left:50%; margin-left: -46%; 	width:96%; padding: 5px;	text-align: center;	font-size: 14px;	text-shadow: none;	letter-spacing: 0.08em;	}
+.my_setup_button_laden{	padding: 5px;	text-align: center;	font-size: 14px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif;	font-variant: small-caps; letter-spacing:0.1em;	background-color: #222;	}
+.my_setup_button_speichern{	padding: 5px;	text-align: right;	font-size: 14px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif;	font-variant: small-caps; letter-spacing:0.1em;	background-color: #222;	}
+.my_setup_grid{	float: left; position: relative;	left:50%; margin-left: -46%; 	top:10px; width:96%; padding: 5px;	padding-bottom:30px; text-align: center;	font-size: 14px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif;	font-variant: small-caps; letter-spacing:0.08em;	}
+
+
+
+.my_room_list 	{ 	float: left; 	position: relative; 	width:50%;	font-family: Arial, Helvetica, sans-serif;	font-variant: small-caps; letter-spacing:0.07em; }
+
+.my_wetter_list .my_listview		{ 	float: left; 	position: relative; 	height:	1050px;				padding:1000px;		font-family: Arial, Helvetica, sans-serif;	font-variant: small-caps; letter-spacing:0.07em; }
+.my_wetter_list .my_li_tag_mobile	{	border-radius:10px; padding: 10px; 	font-variant: small-caps; letter-spacing:0.07em; }
+.my_wetter_list .my_li_input_mobile	{	width:200px; color:#55aa11; font-variant: small-caps; letter-spacing:0.07em;}
+	
+.my_wetter_list .my_li_tag_temp		{	float: right;	position: absolute;	border-radius:10px;	left:50%;	top:60px;	margin-left: -265px;	width:150px;	height:360px; 	}	
+.my_wetter_list .my_li_tag_wind		{	float: right;	position: absolute;	border-radius:10px;	left:50%;	top:60px;	margin-left: -75px;		width:150px;	height:360px;	}	
+.my_wetter_list .my_li_tag_luft		{	float: right;	position: absolute; border-radius:10px;	left:50%;	top:60px;	margin-left:  115px;	width:150px;	height:360px;	}	
+.my_wetter_list .my_li_tag_regen	{	float: right;	position: absolute;	border-radius:10px;	left:50%;	top:450px;	margin-left: -265px;	width:150px;	height:375px;	}	
+.my_wetter_list .my_li_tag_sonne	{	float: right;	position: absolute; border-radius:10px;	left:50%;	top:450px;	margin-left: -75px;		width:150px;	height:375px;	}	
+.my_wetter_list .my_li_tag_hell		{	float: right;	position: absolute;	border-radius:10px;	left:50%;	top:450px;	margin-left:  115px;	width:150px;	height:375px;	}	
+.my_wetter_list .my_input{	padding: 5px;	text-align: center;	font-size: 14px;	text-shadow: none;	letter-spacing: 0.05em;	background-color: #222;	}
+
+.my_wetter_list .my_li_tag_am_kl{	float: right;	position: absolute;	border-radius:10px;	left:50%;	top:80px;	padding-left:0px; margin-left: -125px;	width:250px; height:250px;	}	
+/*.my_wetter_list .ui-input-text { float: right; 		position: relative;		font-weight: normal;	width:70px;
+/*	font-size:8px;*/
+
+
+.my_timer_collapsable	{	float: right; 	position: absolute;	left:50%; top:180px;	margin-left: -40%; 	width:80%;	height:200px; font-family: Arial, Helvetica, sans-serif;	font-variant: small-caps; letter-spacing:0.07em;}
+.my_timer_collapsable .my_input{	padding: 5px;	text-align: center;	font-size: 14px;	text-shadow: none;	letter-spacing: 0.05em;	background-color: #222;	}
+
+.my_grid_class  .ui-block-a { width: 100px; padding: 5px;} 
+.my_grid_class  .ui-block-b { width: 100px; padding: 5px;} 
+.my_grid_class  .ui-block-c { width: 100px; padding: 5px;} 
+.my_grid_class  .ui-block-d { width: 460px; padding: 5px; } 
+ 
+.my_loader{	float: left; width:100%;	position: relative;	height: 80px; text-align: center;	font-size: 16px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif; letter-spacing: 0.08em;	font-variant: small-caps;}
+.my_setup_button_fieldcontain{	float: left; 	position: relative;	left:50%; margin-left: -46%; 	width:96%; padding: 5px;	text-align: center;	font-size: 14px;	text-shadow: none;	letter-spacing: 0.08em;	}
+.my_setup_button_laden{	padding: 5px;	text-align: center;	font-size: 14px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif;	font-variant: small-caps; letter-spacing:0.1em;	background-color: #222;	}
+.my_setup_button_speichern{	padding: 5px;	text-align: right;	font-size: 14px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif;	font-variant: small-caps; letter-spacing:0.1em;	background-color: #222;	}
+.my_setup_grid{	float: left; position: relative;	left:50%; margin-left: -46%; 	top:10px; width:96%; padding: 5px;	padding-bottom:30px; text-align: center;	font-size: 14px;	text-shadow: none;	font-family: Arial, Helvetica, sans-serif;	font-variant: small-caps; letter-spacing:0.08em;	}
+
+
+.my_mobile_list{ text-shadow: none;	font-family: Arial, Helvetica, sans-serif;	color:#a23; font-variant: small-caps; letter-spacing:0.1em;	text-align:center;}
+.my_tag{text-align:center;}
+
+.my_mobile_list .green_text{color: 	green} 
+.my_mobile_list .red_text 	{color: 	#C60D0D;} 
+
+.my-video-list .my-listview { }
+.my-video-list .my-video-tag {
+	float: right;
+ 	position: absolute;
+ 	left:50%;
+ 	top:75px;
+	margin-left: -144px; 
+
+ 	width: 288px;
+ 	height: 215px;
+	background-image: url(http://192.168.2.250/videostream.cgi?user=gast&pwd=&resolution=8&rate=0);
+
+ }
+ 
+ 
+ .my-navbar .my-nav-tag {
+ 	border-radius: 5px ;
+ /*	width: 70px;*/
+ 	font-family: Arial, Helvetica, sans-serif;
+ 	background-color: #998877;
+}
+
+
+ .my-list-2 .my-listview {
+ 	margin: 5px;
+	position: absolute;
+	left: 5%;
+	float: right;
+	/*margin-bottom: 20px;*/
+	
+    
+ }
+
+.my-list-2 .my-input {
+		margin: 0 auto;
+		min-height: 30px;	
+		text-align:center;
+		width:100px;
+		background-color:#123456;
+}
+		
+
+
+
+
+
+
+ 
+ .my-raum-list .my-li-licht {
+ 	float: right;
+ 	position: absolute;
+ 	left:50%;
+ 	top:100px;
+	margin-left: 150px; 
+	width: 300px;
+	border-radius: 50px ;
+} 
+
+.my-raum-list .my-li-licht-btn {
+	float: right;
+ 	position: absolute;
+ 	left:50%;
+ 	top:550px;
+	margin-left: 200px; 
+	width: 80px;
+	height: 20px;
+	border-radius: 10px ;
+	font-size:16px;
+}
+
